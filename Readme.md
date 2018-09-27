@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Германн Кузнецов](https://up.htmlacademy.ru/adaptive/15/user/675087).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://up.htmlacademy.ru/htmlcss/21/user/29644).
 
 ---
 
