@@ -41,10 +41,10 @@
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
         <form class="knitting-form" method="post" action="https://echo.htmlacademy.ru">
-          <fieldset class="knitting-form__fieldset">
-            <legend class="knitting-form__legend">
+          <div class="knitting-form__fieldset">
+            <h3 class="knitting-form__legend">
               Тип
-            </legend>
+            </h3>
             <ul class="knitting-form__list">
               <li class="knitting-form__item">
                 <label class="knitting-form__label">
@@ -59,11 +59,11 @@
                 </label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="knitting-form__fieldset">
-            <legend class="knitting-form__legend">
+          </div>
+          <div class="knitting-form__fieldset">
+            <h3 class="knitting-form__legend">
               Цвет
-            </legend>
+            </h3>
             <ul class="knitting-form__list">
               <li class="knitting-form__item">
                 <label class="knitting-form__label">
@@ -102,11 +102,11 @@
                 </label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="knitting-form__fieldset">
-            <legend class="knitting-form__legend">
+          </div>
+          <div class="knitting-form__fieldset">
+            <h3 class="knitting-form__legend">
               ФИО
-            </legend>
+            </h3>
             <label class="knitting-form__label">
               Имя:
               <input class="knitting-form__input" type="text" placeholder="Введите ваше имя*" name="name" required>
@@ -119,21 +119,26 @@
               Отчество:
               <input class="knitting-form__input" type="text"  placeholder="Отчетчво, если желаете" name="patronymic">
             </label>
-          </fieldset>
-          <label class="knitting-form__label--single-input">
-            Тел
-            <input class="knitting-form__input" type="phone" placeholder="+7 XXX XXX XX XX*" name="phone" required>
-          </label>
-          <label class="knitting-form__label--single-input">
-            E-mail
-            <input class="knitting-form__input" type="email" placeholder="Ваш Email*" name="email" required>
-          </label>
-          <label class="knitting-form__label--single-input">
-            Доп
-            <textarea class="knitting-form__textarea">
-              Опишите все ваши пожелания к заказу
-            </textarea>
-          </label>
+          </div>
+          <div class="knitting-form__fieldset knitting-form__fieldset--contacts">
+            <h3 class="knitting-form__legend knitting-form__legend--contacts">
+              Ваши контакты
+            </h3>
+            <label class="knitting-form__label knitting-form__label--contacts">
+              Тел
+              <input class="knitting-form__input" type="phone" placeholder="+7 XXX XXX XX XX*" name="phone" required>
+            </label>
+            <label class="knitting-form__label knitting-form__label--contacts">
+              E-mail
+              <input class="knitting-form__input" type="email" placeholder="Ваш Email*" name="email" required>
+            </label>
+            <label class="knitting-form__label knitting-form__label--contacts">
+              Доп
+              <textarea class="knitting-form__textarea">
+                Опишите все ваши пожелания к заказу
+              </textarea>
+            </label>
+          </div>
           <span class="knitting-form__note">
             *Поля обязательны для заполнения
           </span>
