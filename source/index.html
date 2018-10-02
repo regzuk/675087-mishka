@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-img" src="http://placehold.it/86x35"
           width="86" height="35">
       </a>
@@ -25,15 +26,15 @@
             <label class="site-search__input-label" for="site-search-input">
               Поиск по сайту
             </label>
-            <input class="site-search__input" id="site-search-input" type="text" name="search">
-            <button class="site-search__button" type="submit">Искать</button>
+            <input class="site-search__input visually-hidden" id="site-search-input" type="text" name="search">
+            <button class="site-search__button visually-hidden" type="submit">Искать</button>
           </form>
-          <button class="main-nav__cart" type="button">Корзина</button>
+          <a class="main-nav__cart" type="button">Корзина: пока пуста</a>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title page-main__title--index">
+      <h1 class="page-main__title page-main__title--index visually-hidden">
         Мишка - интернет магазин вещей для дома ручной работы
       </h1>
       <section class="promo">
@@ -43,12 +44,12 @@
         <nav class="promo__nav">
           <ul class="promo__nav-list">
             <li class="promo__nav-item">
-              <a class="promo__nav-link">
+              <a class="promo__nav-link promo__nav-link--items">
                 Предметы интерьера
               </a>
             </li>
             <li class="promo__nav-item">
-              <a class="promo__nav-link">
+              <a class="promo__nav-link promo__nav-link--toys">
                 Детские игрушки
               </a>
             </li>
@@ -95,7 +96,7 @@
             </table>
           </div>
           <figure class="featured__img-wrapper">
-            <img class="featured__img" src="http://placehold.it/260x315"
+            <img class="featured__img" src="./img/triple-set-mobile@1x.jpg"
               width="260" height="315">
           </figure>
           <div class="featured__book-wrapper">

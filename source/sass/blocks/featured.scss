@@ -1,0 +1,32 @@
+.featured__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+
+  @include clear-title;
+}
+
+.featured__type {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #63d1bb;
+}
+
+.featured__product-wrapper {
+  font-size: 15px;
+  color: #444444;
+}
+
+.featured__details {
+  line-height: 20px;
+}
+
+.featured__book-wrapper {
+  color: #444444;
+}
+
+.featured__book-button {
+  display: block;
+  border: 2px solid #434343;
+}
