@@ -1,0 +1,19 @@
+.catalog__list {
+  @include clear-list;
+}
+
+.catalog__item-title {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.catalog__item-details {
+  font-size: 13px;
+  line-height: 30px;
+  color: $content-text-color;
+}
+
+.catalog__item-price {
+  font-size: 15px;
+  font-weight: bold;
+}
