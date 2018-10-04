@@ -1,0 +1,29 @@
+.knitting-order__description {
+  font-size: 13px;
+  color: $content-text-color;
+}
+
+.knitting-form__legend {
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+  font-weight: bold;
+}
+
+.knitting-form__label {
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+  font-weight: bold;
+
+  &--contacts {
+    line-height: 16px;
+    color: #63d1bb;
+  }
+}
+
+.knitting-form__note {
+  font-size: 14px;
+  line-height: 16px;
+  color: $content-text-color;
+}

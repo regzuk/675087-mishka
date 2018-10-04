@@ -1,0 +1,17 @@
+.reviews__list {
+  @include clear-list;
+}
+
+.reviews__item {
+  color: $content-text-color;
+}
+
+.reviews__item-content {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.reviews__item-author {
+  color: #000000;
+  font-weight: bold;
+}

@@ -1,0 +1,8 @@
+.about__list {
+  @include clear-list;
+}
+
+.about__item {
+  line-height: 20px;
+  font-weight: bold;
+}

@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-img" src="http://placehold.it/86x35"
           width="86" height="35">
       </a>
@@ -25,10 +26,10 @@
             <label class="site-search__input-label" for="site-search-input">
               Поиск по сайту
             </label>
-            <input class="site-search__input" id="site-search-input" type="text" name="search">
-            <button class="site-search__button" type="submit">Искать</button>
+            <input class="site-search__input visually-hidden" id="site-search-input" type="text" name="search">
+            <button class="site-search__button visually-hidden" type="submit">Искать</button>
           </form>
-          <button class="main-nav__cart" type="button">Корзина</button>
+          <a class="main-nav__cart" type="button">Корзина: пока пуста</a>
         </div>
       </nav>
     </header>
@@ -96,7 +97,7 @@
               <p class="production__description">
                 По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
               </p>
-              <button class="production__book-button" type="button">Сделать заказ</button>
+              <button class="production__book-button button" type="button">Сделать заказ</button>
           </div>
         </div>
       </section>
@@ -104,7 +105,7 @@
     </main>
     <footer class="page-footer">
       <section class="social">
-        <h2 class="social__title">
+        <h2 class="social__title visually-hidden">
           Мы в социальных сетях
         </h2>
         <ul class="social__list">
@@ -127,7 +128,7 @@
       </section>
     </footer>
     <section class="modal-add-cart">
-      <h2 class="modal-add-cart__title">
+      <h2 class="modal-add-cart__title title">
         Добавить в корзину
       </h2>
       <span class="modal-add-cart__size-text">
@@ -144,7 +145,7 @@
           <button class="modal-add-cart__size-button" type="button">L</button>
         </li>
       </ul>
-      <button class="modal-add-cart__add-cart-button" type="button">Добавить</button>
+      <button class="modal-add-cart__add-cart-button button" type="button">Добавить</button>
     </section>
   </body>
 </html>

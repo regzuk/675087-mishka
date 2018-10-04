@@ -1,0 +1,18 @@
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.contacts__list {
+  line-height: 30px;
+  color: $content-text-color;
+
+  @include clear-list;
+}
+
+.contacts__email-link {
+  color: $content-text-color;
+  text-decoration: none;
+  border-bottom: 1px solid #6bc5b3;
+}

@@ -1,0 +1,12 @@
+.page-header {
+  background-color: #ffffff;
+
+  font-weight: bold;
+}
+
+.page-header__logo-img {
+  width: 86px;
+  height: 35px;
+}
+
+@import "nav-list.scss";
