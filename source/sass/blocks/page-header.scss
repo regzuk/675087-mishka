@@ -2,6 +2,16 @@
   background-color: #ffffff;
 
   font-weight: bold;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.page-header__logo {
+  display: block;
+  align-self: center;
+  margin: 22px auto;
 }
 
 .page-header__logo-img {
@@ -9,4 +19,4 @@
   height: 35px;
 }
 
-@import "nav-list.scss";
+@import "main-nav.scss";

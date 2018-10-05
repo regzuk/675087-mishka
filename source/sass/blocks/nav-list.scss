@@ -1,5 +1,9 @@
 .nav-list {
   @include clear-list;
+
+  display: flex;
+  flex-direction: column;
+  // align-items: stretch;
 }
 
 .nav-list__item-link {

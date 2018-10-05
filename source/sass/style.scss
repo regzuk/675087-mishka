@@ -16,6 +16,8 @@ body {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 24px;
+
+  min-width: 320px;
 }
 
 @import "variables.scss";
