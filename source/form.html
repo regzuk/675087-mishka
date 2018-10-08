@@ -17,7 +17,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list nav-list">
             <li class="nav-list__item">
-              <a class="nav-list__item-link" href="catalog.html">Каталог</a>
+              <a class="nav-list__item-link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="nav-list__item">
               <a class="nav-list__item-link" href="form.html">Вязание на заказ</a>
@@ -27,10 +27,10 @@
             <label class="site-search__input-label" for="site-search-input">
               Поиск по сайту
             </label>
-            <input class="site-search__input" id="site-search-input" type="text" name="search">
-            <button class="site-search__button" type="submit">Искать</button>
+            <input class="site-search__input visually-hidden" id="site-search-input" type="text" name="search">
+            <button class="site-search__button visually-hidden" type="submit">Искать</button>
           </form>
-          <button class="main-nav__cart" type="button">Корзина</button>
+          <a class="main-nav__cart" type="button">Корзина: пока пуста</a>
         </div>
       </nav>
     </header>
@@ -106,41 +106,39 @@
                 </li>
               </ul>
             </div>
-            <div class="knitting-form__fieldset">
-              <h3 class="knitting-form__legend">
+            <div class="knitting-form__fieldset knitting-form__fieldset--personal">
+              <h3 class="knitting-form__legend knitting-form__legend--personal">
                 ФИО
               </h3>
-              <label class="knitting-form__label">
+              <label for="name" class="knitting-form__label knitting-form__label--personal">
                 Имя:
-                <input class="knitting-form__input" type="text" placeholder="Введите ваше имя*" name="name" required>
               </label>
-              <label class="knitting-form__label">
+              <input id="name" class="knitting-form__input" type="text" placeholder="Введите ваше имя*" name="name" required>
+              <label for="surname" class="knitting-form__label knitting-form__label--personal">
                 Фамилия:
-                <input class="knitting-form__input" type="text" placeholder="Укажите фамилию*"  name="surname" required>
               </label>
-              <label class="knitting-form__label">
+              <input id="surname" class="knitting-form__input" type="text" placeholder="Укажите фамилию*"  name="surname" required>
+              <label for="patronymic" class="knitting-form__label knitting-form__label--personal">
                 Отчество:
-                <input class="knitting-form__input" type="text"  placeholder="Отчетчво, если желаете" name="patronymic">
               </label>
+              <input id="patronymic" class="knitting-form__input" type="text"  placeholder="Отчетчво, если желаете" name="patronymic">
             </div>
-            <div class="knitting-form__fieldset knitting-form__fieldset--contacts">
+            <div class="knitting-form__fieldset knitting-form__fieldset--personal knitting-form__fieldset--contacts">
               <h3 class="knitting-form__legend knitting-form__legend--contacts visually-hidden">
                 Ваши контакты
               </h3>
-              <label class="knitting-form__label knitting-form__label--contacts">
+              <label for="phone" class="knitting-form__label knitting-form__label--personal knitting-form__label--contacts">
                 Тел
-                <input class="knitting-form__input" type="phone" placeholder="+7 XXX XXX XX XX*" name="phone" required>
               </label>
-              <label class="knitting-form__label knitting-form__label--contacts">
+              <input id="phone" class="knitting-form__input" type="phone" placeholder="+7 XXX XXX XX XX*" name="phone" required>
+              <label for="email" class="knitting-form__label knitting-form__label--personal knitting-form__label--contacts">
                 E-mail
-                <input class="knitting-form__input" type="email" placeholder="Ваш Email*" name="email" required>
               </label>
-              <label class="knitting-form__label knitting-form__label--contacts">
+              <input id="email" class="knitting-form__input" type="email" placeholder="Ваш Email*" name="email" required>
+              <label for="wish" class="knitting-form__label knitting-form__label--personal knitting-form__label--contacts">
                 Доп
-                <textarea class="knitting-form__textarea">
-                  Опишите все ваши пожелания к заказу
-                </textarea>
               </label>
+              <textarea is="wish" class="knitting-form__textarea" name="wish">Опишите все ваши пожелания к заказу</textarea>
             </div>
             <span class="knitting-form__note">
               *Поля обязательны для заполнения
@@ -152,26 +150,30 @@
     </main>
     <footer class="page-footer">
       <section class="social">
-        <h2 class="social__title visually-hidden">
-          Мы в социальных сетях
-        </h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link">Инстаграм</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link">Фейсбук</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link">Твиттер</a>
-          </li>
-        </ul>
+        <div class="social__container container">
+          <h2 class="social__title visually-hidden">
+            Мы в социальных сетях
+          </h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link">Инстаграм</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">Фейсбук</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">Твиттер</a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="developed">
-        <span class="developed__text">
-          Разработано
-        </span>
-        <a class="developed__link" href="">HTMLAcademy.ru</a>
+        <div class="developed__container container">
+          <span class="developed__text">
+            Разработано
+          </span>
+          <a class="developed__link" href="">HTMLAcademy.ru</a>
+        </div>
       </section>
     </footer>
   </body>

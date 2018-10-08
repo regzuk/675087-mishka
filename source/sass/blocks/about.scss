@@ -1,8 +1,16 @@
+.about__container {
+  padding-top: 34px;
+  padding-bottom: 45px;
+}
+
 .about__list {
   @include clear-list;
+  padding-top: 3px;
 }
 
 .about__item {
   line-height: 20px;
   font-weight: bold;
+
+  margin-top: 85px;
 }

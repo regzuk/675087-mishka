@@ -17,7 +17,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list nav-list">
             <li class="nav-list__item">
-              <a class="nav-list__item-link" href="catalog.html">Каталог</a>
+              <a class="nav-list__item-link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="nav-list__item">
               <a class="nav-list__item-link" href="form.html">Вязание на заказ</a>
@@ -92,7 +92,7 @@
               Процесс производства
             </h3>
             <figure class="production__video-img-wrapper">
-              <img class="pr0duction__video-img" src="http://placehold.it/260x195"
+              <img class="production__video-img" src="http://placehold.it/260x195"
                 width="260" height="195" >
             </figure>
               <p class="production__description">
@@ -102,51 +102,56 @@
           </div>
         </div>
       </section>
-
     </main>
     <footer class="page-footer">
       <section class="social">
-        <h2 class="social__title visually-hidden">
-          Мы в социальных сетях
-        </h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link">Инстаграм</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link">Фейсбук</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link">Твиттер</a>
-          </li>
-        </ul>
+        <div class="social__container container">
+          <h2 class="social__title visually-hidden">
+            Мы в социальных сетях
+          </h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link">Инстаграм</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">Фейсбук</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">Твиттер</a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="developed">
-        <span class="developed__text">
-          Разработано
-        </span>
-        <a class="developed__link" href="">HTMLAcademy.ru</a>
+        <div class="developed__container container">
+          <span class="developed__text">
+            Разработано
+          </span>
+          <a class="developed__link" href="">HTMLAcademy.ru</a>
+        </div>
       </section>
     </footer>
     <section class="modal-add-cart">
-      <h2 class="modal-add-cart__title title">
-        Добавить в корзину
-      </h2>
-      <span class="modal-add-cart__size-text">
-        Выберите размер:
-      </span>
-      <ul class="modal-add-cart__size-list">
-        <li class="modal-add-cart__size-item">
-          <button class="modal-add-cart__size-button modal-add-cart__size-button--active" type="button">S</button>
-        </li>
-        <li class="modal-add-cart__size-item">
-          <button class="modal-add-cart__size-button" type="button">M</button>
-        </li>
-        <li class="modal-add-cart__size-item">
-          <button class="modal-add-cart__size-button" type="button">L</button>
-        </li>
-      </ul>
-      <button class="modal-add-cart__add-cart-button button" type="button">Добавить</button>
+      <div class="modal-add-cart__container container">
+        <h2 class="modal-add-cart__title title">
+          Добавить в корзину
+        </h2>
+        <span class="modal-add-cart__size-text">
+          Выберите размер:
+        </span>
+        <ul class="modal-add-cart__size-list">
+          <li class="modal-add-cart__size-item">
+            <button class="modal-add-cart__size-button modal-add-cart__size-button--active button" type="button">S</button>
+          </li>
+          <li class="modal-add-cart__size-item">
+            <button class="modal-add-cart__size-button button" type="button">M</button>
+          </li>
+          <li class="modal-add-cart__size-item">
+            <button class="modal-add-cart__size-button button" type="button">L</button>
+          </li>
+        </ul>
+        <button class="modal-add-cart__add-cart-button button" type="button">Добавить</button>
+      </div>
     </section>
   </body>
 </html>

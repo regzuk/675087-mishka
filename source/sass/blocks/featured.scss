@@ -1,7 +1,13 @@
+.featured__container {
+  margin-top: 34px;
+  margin-bottom: 36px;
+}
+
 .featured__type {
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
+  text-transform: uppercase;
   color: #63d1bb;
 }
 
@@ -10,10 +16,42 @@
   color: $content-text-color;
 }
 
+.featured__description {
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+}
+
 .featured__details {
   line-height: 20px;
+
+  width: 100%;
+  margin-top: 34px;
+  border-collapse: collapse;
+}
+
+.featured__detail-name,
+.featured__detail-value {
+  padding: 13px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.featured__detail-value {
+  margin-left: 31px;
+}
+
+.featured__img-wrapper {
+  padding: 0;
+  margin: 0;
+  padding-top: 28px;
 }
 
 .featured__book-wrapper {
   color: $content-text-color;
+  margin-top: 28px;
+  text-align: center;
+}
+
+.featured__book-button {
+  margin-top: 28px;
 }

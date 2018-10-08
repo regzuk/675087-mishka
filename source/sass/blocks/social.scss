@@ -1,3 +1,22 @@
-.social {
-  color: inherit;
+.social__list {
+  @include clear-list;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 57px;
+  padding-top: 30px;
+  padding-right: 62px;
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.social__link {
+  display: block;
+  font-size: 0;
+
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
 }
