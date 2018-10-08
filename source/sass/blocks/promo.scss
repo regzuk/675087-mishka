@@ -27,7 +27,7 @@ $title-hor-padding: 38px;
   color: #f6fcfb;
   width: 110px;
   padding: 30px;
-  padding-right: 100%;
+  padding-right: 320px - 110px - 30px;
 
   &--items {
     background-color: #63d1bb;
