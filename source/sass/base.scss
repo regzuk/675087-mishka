@@ -9,6 +9,31 @@
   overflow: hidden;
 }
 
+.menu-item {
+  display: block;
+  width: 100%;
+  padding: 27px 0;
+  box-shadow: 0 1px 0 #ebebeb;
+
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .menu-item {
+    padding: 32px 0;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu-item {
+    padding: 36px 0;
+  }
+}
+
 .title {
   font-size: 25px;
   line-height: 30px;

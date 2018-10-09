@@ -8,31 +8,41 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-img" src="http://placehold.it/86x35"
-          width="86" height="35">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list nav-list">
-            <li class="nav-list__item">
-              <a class="nav-list__item-link" href="catalog.html">Каталог товаров</a>
+      <div class="page-header__inner">
+        <a class="page-header__logo" href="index.html">На главную</a>
+        <nav class="page-header__item page-header__item--nav nav">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a class="nav__link menu-item" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="nav-list__item">
-              <a class="nav-list__item-link" href="form.html">Вязание на заказ</a>
+            <li class="nav__list-item">
+              <a class="nav__link menu-item" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
-          <form class="main-nav__search site-search" method="post" action="https://echo.htmlacademy.ru">
-            <label class="site-search__input-label" for="site-search-input">
+        </nav>
+        <div class="page-header__item page-header__item--user user-list">
+          <form class="user-list__search site-search" method="post" action="https://echo.htmlacademy.ru">
+            <label class="site-search__input-label menu-item" for="site-search-input">
               Поиск по сайту
             </label>
             <input class="site-search__input visually-hidden" id="site-search-input" type="text" name="search">
             <button class="site-search__button visually-hidden" type="submit">Искать</button>
           </form>
-          <a class="main-nav__cart" type="button">Корзина: пока пуста</a>
+          <a class="user-list__cart menu-item" type="button">Корзина: пока пуста</a>
         </div>
-      </nav>
+        <nav class="page-header__item page-header__item--stock nav-stock">
+          <ul class="nav-stock__list">
+            <li class="nav-stock__item">
+              <a class="nav-stock__link menu-item">Новые поступления</a>
+            </li>
+            <li class="nav-stock__item">
+              <a class="nav-stock__link menu-item">Распродажа</a>
+            </li>
+          </ul>
+        </nav>
+        <span class="page-header__delivery">Бесплатная доставка по России</span>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+      </div>
     </header>
     <main class="page-main">
       <h1 class="page-main__title page-main__title--index visually-hidden">

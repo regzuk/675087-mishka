@@ -1,0 +1,40 @@
+.nav__list {
+  @include clear-list;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .nav__list {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .nav__list-item {
+    &:first-child {
+      margin-right: 37px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav__list-item {
+    &:first-child {
+      margin-right: 71px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .nav__link {
+    padding: 0;
+    padding-top: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav__link {
+    padding: 36px 0;
+  }
+}
