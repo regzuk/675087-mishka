@@ -43,8 +43,35 @@
   margin: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
 .container {
-  margin: 0 30px;
+  width: 260px;
+  margin: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 668px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1000px;
+  }
 }
 
 .button {
@@ -58,4 +85,13 @@
   line-height: 20px;
   text-align: center;
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding: 14px 0;
+    text-transform: uppercase;
+    font-size: 17px;
+    width: 100%;
+  }
 }
