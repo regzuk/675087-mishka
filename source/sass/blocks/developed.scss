@@ -9,6 +9,13 @@
   padding-bottom: 30px;
 }
 
+@media (min-width: $tablet-width) {
+  .developed__container {
+    width: auto;
+    padding: 0;
+  }
+}
+
 .developed__text {
   font-size: 19px;
   line-height: 18px;
