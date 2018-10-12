@@ -58,14 +58,14 @@
               <h3 class="knitting-form__legend">
                 Тип
               </h3>
-              <ul class="knitting-form__list">
-                <li class="knitting-form__item">
+              <ul class="knitting-form__list knitting-form__list--type">
+                <li class="knitting-form__item knitting-form__item--type">
                   <label class="knitting-form__label">
                     <input class="knitting-form__radio" type="radio" name="type" value="acc">
                     Аксессуар для интерьера
                   </label>
                 </li>
-                <li class="knitting-form__item">
+                <li class="knitting-form__item knitting-form__item--type">
                   <label class="knitting-form__label">
                     <input class="knitting-form__radio" type="radio" name="type" value="toy">
                     Детская игрушка
@@ -77,38 +77,38 @@
               <h3 class="knitting-form__legend">
                 Цвет
               </h3>
-              <ul class="knitting-form__list">
-                <li class="knitting-form__item">
+              <ul class="knitting-form__list knitting-form__list--color">
+                <li class="knitting-form__item knitting-form__item--color">
                   <label class="knitting-form__label">
                     <input class="knitting-form__radio" type="checkbox" name="color" value="white">
                     Белый
                   </label>
                 </li>
-                <li class="knitting-form__item">
+                <li class="knitting-form__item knitting-form__item--color">
                   <label class="knitting-form__label">
                     <input class="knitting-form__radio" type="checkbox" name="color" value="gray">
                     Серый
                   </label>
                 </li>
-                <li class="knitting-form__item">
+                <li class="knitting-form__item knitting-form__item--color">
                   <label class="knitting-form__label">
                     <input class="knitting-form__radio" type="checkbox" name="color" value="tiffany">
                     «Тиффани»
                   </label>
                 </li>
-                <li class="knitting-form__item">
+                <li class="knitting-form__item knitting-form__item--color">
                   <label class="knitting-form__label">
                     <input class="knitting-form__radio" type="checkbox" name="color" value="black">
                     Черный
                   </label>
                 </li>
-                <li class="knitting-form__item">
+                <li class="knitting-form__item knitting-form__item--color">
                   <label class="knitting-form__label">
                     <input class="knitting-form__radio" type="checkbox" name="color" value="pink">
                     Розовый
                   </label>
                 </li>
-                <li class="knitting-form__item">
+                <li class="knitting-form__item knitting-form__item--color">
                   <label class="knitting-form__label">
                     <input class="knitting-form__radio" type="checkbox" name="color" value="orange">
                     Оранжевый
@@ -120,40 +120,58 @@
               <h3 class="knitting-form__legend knitting-form__legend--personal">
                 ФИО
               </h3>
-              <label for="name" class="knitting-form__label knitting-form__label--personal">
-                Имя:
-              </label>
-              <input id="name" class="knitting-form__input" type="text" placeholder="Введите ваше имя*" name="name" required>
-              <label for="surname" class="knitting-form__label knitting-form__label--personal">
-                Фамилия:
-              </label>
-              <input id="surname" class="knitting-form__input" type="text" placeholder="Укажите фамилию*"  name="surname" required>
-              <label for="patronymic" class="knitting-form__label knitting-form__label--personal">
-                Отчество:
-              </label>
-              <input id="patronymic" class="knitting-form__input" type="text"  placeholder="Отчетчво, если желаете" name="patronymic">
+              <ul class="knitting-form__list knitting-form__list--personal">
+                <li class="knitting-form__item knitting-form__item--personal">
+                  <label for="name" class="knitting-form__label knitting-form__label--personal">
+                    Имя:
+                  </label>
+                  <input id="name" class="knitting-form__input" type="text" placeholder="Введите ваше имя*" name="name" required>
+                </li>
+                <li class="knitting-form__item knitting-form__item--personal">
+                  <label for="surname" class="knitting-form__label knitting-form__label--personal">
+                    Фамилия:
+                  </label>
+                  <input id="surname" class="knitting-form__input" type="text" placeholder="Укажите фамилию*"  name="surname" required>
+                </li>
+                <li class="knitting-form__item knitting-form__item--personal">
+                  <label for="patronymic" class="knitting-form__label knitting-form__label--personal">
+                    Отчество:
+                  </label>
+                  <input id="patronymic" class="knitting-form__input" type="text"  placeholder="Отчество, если желаете" name="patronymic">
+                </li>
+              </ul>
             </div>
             <div class="knitting-form__fieldset knitting-form__fieldset--personal knitting-form__fieldset--contacts">
               <h3 class="knitting-form__legend knitting-form__legend--contacts visually-hidden">
                 Ваши контакты
               </h3>
-              <label for="phone" class="knitting-form__label knitting-form__label--personal knitting-form__label--contacts">
-                Тел
-              </label>
-              <input id="phone" class="knitting-form__input" type="phone" placeholder="+7 XXX XXX XX XX*" name="phone" required>
-              <label for="email" class="knitting-form__label knitting-form__label--personal knitting-form__label--contacts">
-                E-mail
-              </label>
-              <input id="email" class="knitting-form__input" type="email" placeholder="Ваш Email*" name="email" required>
+              <ul class="knitting-form__list knitting-form__list--contacts">
+                <li class="knitting-form__item knitting-form__item--contacts">
+                  <label for="phone" class="knitting-form__label knitting-form__label--personal knitting-form__label--contacts">
+                    Тел
+                  </label>
+                  <input id="phone" class="knitting-form__input" type="phone" placeholder="+7 XXX XXX XX XX*" name="phone" required>
+                </li>
+                <li class="knitting-form__item knitting-form__item--contacts">
+                  <label for="email" class="knitting-form__label knitting-form__label--personal knitting-form__label--contacts">
+                    E-mail
+                  </label>
+                  <input id="email" class="knitting-form__input" type="email" placeholder="Ваш Email*" name="email" required>
+                </li>
+              </ul>
+            </div>
+            <div class="knitting-form__fieldset knitting-form__fieldset--other">
               <label for="wish" class="knitting-form__label knitting-form__label--personal knitting-form__label--contacts">
                 Доп
               </label>
               <textarea is="wish" class="knitting-form__textarea" name="wish">Опишите все ваши пожелания к заказу</textarea>
             </div>
-            <span class="knitting-form__note">
-              *Поля обязательны для заполнения
-            </span>
-            <button class="knitting-form__submit-button button" type="submit">Отправить заказ</button>
+            <div class="knitting-form__inner">
+              <span class="knitting-form__note">
+                *Поля обязательны для заполнения
+              </span>
+              <button class="knitting-form__submit-button button" type="submit">Отправить заказ</button>
+            </div>
           </form>
         </div>
       </section>
