@@ -5,14 +5,14 @@
 
     box-shadow: 0 1px 0 #ebebeb;
 
-    width: 668px;
+    width: $tablet-content-width;
     margin: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    width: 1000px;
+    width: $desktop-content-width;
     margin: auto;
   }
 }

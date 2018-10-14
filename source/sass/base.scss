@@ -58,19 +58,19 @@
 }
 
 .container {
-  width: 260px;
+  width: $mobile-content-width;
   margin: auto;
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    width: 668px;
+    width: $tablet-content-width;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 1050px;
+    width: $desktop-content-width;
   }
 }
 

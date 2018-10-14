@@ -61,13 +61,13 @@
   line-height: 16px;
 
   &--active {
-    border-color: #63d1bb;
+    border-color: $contrast-color;
   }
 }
 
 .modal-add-cart__add-cart-button {
   border: none;
-  background-color: #63d1bb;
+  background-color: $contrast-color;
   color: #ffffff;
 
   margin-top: 31px;
