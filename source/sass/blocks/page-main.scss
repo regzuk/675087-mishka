@@ -1,8 +1,14 @@
+.page-main {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-main__title {
   font-size: 27px;
   line-height: 30px;
 
-  background-color: #f1f1f1;
+  background-color: $grey-color;
   text-align: center;
+  margin: 0;
   padding: 75px 0;
 }

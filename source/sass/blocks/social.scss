@@ -1,3 +1,37 @@
-.social {
-  color: inherit;
+@media (min-width: $tablet-width) {
+  .social__container {
+    width: auto;
+  }
+}
+
+.social__list {
+  @include clear-list;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 57px;
+  padding-top: 30px;
+  padding-right: 62px;
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    padding: 0;
+
+    border-bottom: none;
+    width: 40px * 2 + 30px * 3;
+  }
+}
+
+.social__link {
+  display: block;
+  font-size: 0;
+
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
 }

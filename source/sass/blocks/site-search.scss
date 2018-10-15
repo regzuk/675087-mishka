@@ -1,3 +1,11 @@
-.site-search {
-  color: inherit;
+.site-search__input-label {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .site-search__input-label {
+    font-size: 0;
+    box-shadow: -1px 0 0 #ebebeb;
+    width: 88px;
+  }
 }

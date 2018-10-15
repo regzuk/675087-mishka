@@ -1,20 +1,75 @@
 $title-hor-padding: 38px;
 
+@media (min-width: $tablet-width) {
+  .promo {
+    background-color: #f9f9f9;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo__inner {
+    width: 668px;
+    margin: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__inner {
+    width: 1000px;
+    margin: auto;
+  }
+}
+
 .promo__title {
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
   color: #010000;
-  background: #ffffff url("../../img/hero-mobile@1x.jpg") center center no-repeat;
+  text-align: center;
+  background: #f9f9f9 url("../../img/hero-mobile@1x.jpg") center center no-repeat;
 
   @include clear-title;
 
   padding-left: $title-hor-padding;
   padding-right: $title-hor-padding;
+  padding-top: 76px;
+  padding-bottom: 120px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__title {
+    font-size: 43px;
+    line-height: 50px;
+    background-image: url("../../img/hero-tablet@1x.jpg");
+    padding-top: 161px;
+    padding-bottom: 371px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__title {
+    font-size: 33px;
+    line-height: 57px;
+    background-image: url("../../img/hero-desktop@1x.jpg");
+    padding-top: 160px;
+    padding-bottom: 354px;
+  }
 }
 
 .promo__nav-list {
   @include clear-list;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__nav-list {
+    display: flex;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo__nav-item {
+    flex-grow: 1;
+  }
 }
 
 .promo__nav-link {
@@ -22,12 +77,30 @@ $title-hor-padding: 38px;
   font-size: 19px;
   font-weight: bold;
   color: #f6fcfb;
+  text-decoration: none;
+  width: 110px;
+  padding: 30px;
+  padding-right: 320px - 110px - 30px;
 
   &--items {
-    background-color: #63d1bb;
+    background-color: $contrast-color;
   }
 
   &--toys {
     background-color: #55c3b2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo__nav-link {
+    padding: 35px;
+    padding-right: 668px / 2 - 110px - 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__nav-link {
+    padding-left: 37px;
+    padding-right: 1000px / 2 - 110px - 37px;
   }
 }

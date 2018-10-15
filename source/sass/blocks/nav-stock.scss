@@ -1,0 +1,36 @@
+.nav-stock {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .nav-stock {
+    order: 3;
+    display: block;
+  }
+}
+
+.nav-stock__list {
+  @include clear-list;
+}
+
+@media (min-width: $desktop-width) {
+  .nav-stock__list {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav-stock__item {
+    &:first-child {
+      margin-right: 60px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav-stock__link {
+    padding: 0;
+    padding-top: 25px;
+  }
+}

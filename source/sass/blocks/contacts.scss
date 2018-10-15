@@ -1,7 +1,42 @@
+.contacts {
+  margin-bottom: 39px;
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+  }
+}
+
+.contacts__container {
+  margin-top: 44px;
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__container {
+    box-sizing: border-box;
+    padding: 0 0 0 175px;
+  }
+}
+
 .contacts__title {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .contacts__list {
@@ -9,10 +44,99 @@
   color: $content-text-color;
 
   @include clear-list;
+
+  margin-top: 42px;
+
+  font-size: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__list {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__list {
+    display: block;
+  }
+}
+
+.contacts__list-item {
+  display: flex;
+  margin-bottom: 40px;
 }
 
 .contacts__email-link {
   color: $content-text-color;
   text-decoration: none;
   border-bottom: 1px solid #6bc5b3;
+  margin-left: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__email-link {
+    margin-right: 55px;
+  }
+}
+
+.contacts__address {
+  width: 145px;
+  margin: 0;
+  padding: 0;
+  margin-left: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__map {
+    width: 768px;
+    height: 457px;
+
+    background-color: #999999;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__map {
+    width: 525px;
+    position: absolute;
+    right: 0;
+    top: -30px;
+  }
+}
+
+.contacts__button-container {
+  margin-top: 38px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__button-container {
+    margin: 0;
+    margin-top: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__button-container {
+    margin: auto;
+    margin-top: 55px;
+    box-sizing: border-box;
+    padding: 0 0 0 175px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__write-button {
+    margin: auto;
+    width: 230px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__write-button {
+    margin: 0;
+  }
 }

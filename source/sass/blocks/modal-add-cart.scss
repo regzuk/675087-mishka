@@ -1,5 +1,40 @@
+.modal-add-cart {
+  padding-top: 36px;
+  padding-bottom: 46px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-add-cart {
+    padding-top: 51px;
+    width: 566px;
+  }
+}
+
+.modal-add-cart__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-add-cart__container {
+    padding: 0 106px;
+    width: auto;
+  }
+}
+
 .modal-add-cart__title {
   text-align: center;
+  text-transform: uppercase;
+  width: 150px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-add-cart__title {
+    font-size: 30px;
+    line-height: 57px;
+    width: auto;
+  }
 }
 
 .modal-add-cart__size-text {
@@ -7,10 +42,46 @@
   line-height: 30px;
 
   text-align: center;
+
+  margin: 25px 0;
+}
+
+.modal-add-cart__size-form {
+  width: 100%;
+}
+
+.modal-add-cart__size-list {
+  @include clear-list;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 28px;
+}
+
+.modal-add-cart__label {
+  display: block;
+  text-align: center;
+  width: 78px;
+  padding: 20px 0;
+  border: 2px solid #ececec;
+  line-height: 16px;
+
+  .modal-add-cart__size-input:checked + & {
+    border-color: $contrast-color;
+  }
 }
 
 .modal-add-cart__add-cart-button {
   border: none;
-  background-color: #63d1bb;
+  background-color: $contrast-color;
   color: #ffffff;
+
+  margin-top: 31px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-add-cart__add-cart-button {
+    width: 350px;
+  }
 }

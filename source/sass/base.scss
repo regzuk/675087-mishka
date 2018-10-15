@@ -9,6 +9,31 @@
   overflow: hidden;
 }
 
+.menu-item {
+  display: block;
+  width: 100%;
+  padding: 27px 0;
+  box-shadow: 0 1px 0 #ebebeb;
+
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .menu-item {
+    padding: 32px 0;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu-item {
+    padding: 36px 0;
+  }
+}
+
 .title {
   font-size: 25px;
   line-height: 30px;
@@ -18,12 +43,59 @@
   margin: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
 .container {
-  margin: 0 30px;
+  width: $mobile-content-width;
+  margin: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: $tablet-content-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: $desktop-content-width;
+  }
 }
 
 .button {
   display: block;
+  color: #000000;
+  text-decoration: none;
   background-color: #ffffff;
   border: 2px solid #434343;
+  padding: 20px 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  width: 100%;
+
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding: 14px 0;
+    text-transform: uppercase;
+    font-size: 17px;
+    width: 100%;
+  }
 }

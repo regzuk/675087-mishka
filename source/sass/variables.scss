@@ -1,1 +1,10 @@
 $content-text-color: #444444;
+$contrast-color: #63d1bb;
+$grey-color: #f1f1f1;
+
+$tablet-width: 768px;
+$desktop-width: 1250px;
+
+$mobile-content-width: 260px;
+$tablet-content-width: $tablet-width - 2 * 50px;
+$desktop-content-width: $desktop-width - 2 * 100px;

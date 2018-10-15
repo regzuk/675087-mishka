@@ -1,5 +1,28 @@
+.developed__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  padding: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .developed__container {
+    padding: 0;
+  }
+}
+
 .developed__text {
   font-size: 19px;
   line-height: 18px;
   font-weight: bold;
+}
+
+.developed__link {
+  display: block;
+  font-size: 0;
+
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
 }
