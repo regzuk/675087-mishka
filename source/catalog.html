@@ -9,7 +9,11 @@
   <body>
     <header class="page-header">
       <div class="page-header__inner">
-        <a class="page-header__logo" href="index.html">На главную</a>
+        <a class="page-header__logo" href="index.html" alt="На главную">
+          <figure class="page-header__logo-wrapper">
+            <img class="page-header__logo-img" width="86" height="35" src="./img/logo-mobile.svg">
+          </figure>
+        </a>
         <nav class="page-header__item page-header__item--nav nav">
           <ul class="nav__list">
             <li class="nav__list-item">
@@ -28,15 +32,15 @@
             <input class="site-search__input visually-hidden" id="site-search-input" type="text" name="search">
             <button class="site-search__button visually-hidden" type="submit">Искать</button>
           </form>
-          <a class="user-list__cart menu-item" type="button">Корзина: пока пуста</a>
+          <a class="user-list__cart menu-item" href="#">Корзина: пока пуста</a>
         </div>
         <nav class="page-header__item page-header__item--stock nav-stock">
           <ul class="nav-stock__list">
             <li class="nav-stock__item">
-              <a class="nav-stock__link menu-item">Новые поступления</a>
+              <a class="nav-stock__link menu-item" href="#">Новые поступления</a>
             </li>
             <li class="nav-stock__item">
-              <a class="nav-stock__link menu-item">Распродажа</a>
+              <a class="nav-stock__link menu-item" href="#">Распродажа</a>
             </li>
           </ul>
         </nav>
@@ -124,13 +128,13 @@
           </h2>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link">Инстаграм</a>
+              <a class="social__link" href="#">Инстаграм</a>
             </li>
             <li class="social__item">
-              <a class="social__link">Фейсбук</a>
+              <a class="social__link" href="#">Фейсбук</a>
             </li>
             <li class="social__item">
-              <a class="social__link">Твиттер</a>
+              <a class="social__link" href="#">Твиттер</a>
             </li>
           </ul>
         </div>
@@ -140,7 +144,7 @@
           <span class="developed__text">
             Разработано
           </span>
-          <a class="developed__link" href="">HTMLAcademy.ru</a>
+          <a class="developed__link"  href="#">HTMLAcademy.ru</a>
         </div>
       </section>
     </footer>
@@ -152,18 +156,23 @@
         <span class="modal-add-cart__size-text">
           Выберите размер:
         </span>
-        <ul class="modal-add-cart__size-list">
-          <li class="modal-add-cart__size-item">
-            <button class="modal-add-cart__size-button modal-add-cart__size-button--active button" type="button">S</button>
-          </li>
-          <li class="modal-add-cart__size-item">
-            <button class="modal-add-cart__size-button button" type="button">M</button>
-          </li>
-          <li class="modal-add-cart__size-item">
-            <button class="modal-add-cart__size-button button" type="button">L</button>
-          </li>
-        </ul>
-        <button class="modal-add-cart__add-cart-button button" type="button">Добавить</button>
+        <form class="modal-add-cart__size-form" method="post" action="https://echo.htmlacademy.ru">
+          <ul class="modal-add-cart__size-list">
+            <li class="modal-add-cart__size-item">
+              <input id="size-s" class="modal-add-cart__size-input visually-hidden" type="radio" name="size" value="s" checked>
+              <label for="size-s" class="modal-add-cart__label button">S</label>
+            </li>
+            <li class="modal-add-cart__size-item">
+              <input id="size-m" class="modal-add-cart__size-input visually-hidden" type="radio" name="size" value="m">
+              <label for="size-m" class="modal-add-cart__label button">M</label>
+            </li>
+            <li class="modal-add-cart__size-item">
+              <input id="size-l" class="modal-add-cart__size-input visually-hidden" type="radio" name="size" value="l">
+              <label for="size-l" class="modal-add-cart__label button">L</label>
+            </li>
+          </ul>
+          <button class="modal-add-cart__add-cart-button button" type="submit">Добавить</button>
+        </form>
       </div>
     </section>
   </body>

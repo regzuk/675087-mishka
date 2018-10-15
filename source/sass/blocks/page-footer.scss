@@ -3,7 +3,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
+  .page-footer__container {
     padding: 50px;
     display: flex;
     justify-content: space-between;
@@ -11,7 +11,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer {
+  .page-footer__container {
     // width: 1250px;
     padding: 100px;
   }

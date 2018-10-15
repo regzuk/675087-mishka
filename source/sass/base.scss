@@ -76,6 +76,8 @@
 
 .button {
   display: block;
+  color: #000000;
+  text-decoration: none;
   background-color: #ffffff;
   border: 2px solid #434343;
   padding: 20px 0;
@@ -85,6 +87,8 @@
   line-height: 20px;
   text-align: center;
   width: 100%;
+
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {

@@ -2,13 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  width: auto;
   padding: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .developed__container {
-    width: auto;
     padding: 0;
   }
 }

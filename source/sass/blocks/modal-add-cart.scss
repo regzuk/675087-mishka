@@ -46,6 +46,10 @@
   margin: 25px 0;
 }
 
+.modal-add-cart__size-form {
+  width: 100%;
+}
+
 .modal-add-cart__size-list {
   @include clear-list;
   display: flex;
@@ -55,12 +59,15 @@
   margin-top: 28px;
 }
 
-.modal-add-cart__size-button {
+.modal-add-cart__label {
+  display: block;
+  text-align: center;
   width: 78px;
+  padding: 20px 0;
   border: 2px solid #ececec;
   line-height: 16px;
 
-  &--active {
+  .modal-add-cart__size-input:checked + & {
     border-color: $contrast-color;
   }
 }

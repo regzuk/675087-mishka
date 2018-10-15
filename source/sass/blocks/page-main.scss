@@ -1,3 +1,8 @@
+.page-main {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-main__title {
   font-size: 27px;
   line-height: 30px;

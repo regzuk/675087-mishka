@@ -14,12 +14,15 @@
 @media (min-width: $desktop-width) {
   .featured__container {
     margin-top: 117px;
+    box-sizing: border-box;
+    padding: 0 0 0 175px;
+    margin-bottom: 73px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .featured__title {
-    padding-left: 175px;
+    // padding-left: 175px;
   }
 }
 
@@ -65,7 +68,8 @@
 
 @media (min-width: $desktop-width) {
   .featured__product-wrapper {
-    padding-left: 175px;
+    // padding-left: 175px;
+    width: 292px;
   }
 }
 
@@ -160,7 +164,8 @@
 
 @media (min-width: $desktop-width) {
   .featured__book-wrapper {
-    padding-left: 175px;
+    // padding-left: 175px;
+    width: 292px;
   }
 }
 
