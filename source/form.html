@@ -32,7 +32,7 @@
             <input class="site-search__input visually-hidden" id="site-search-input" type="text" name="search">
             <button class="site-search__button visually-hidden" type="submit">Искать</button>
           </form>
-          <a class="user-list__cart menu-item" type="button">Корзина: пока пуста</a>
+          <a class="user-list__cart menu-item" href="#">Корзина: пока пуста</a>
         </div>
         <nav class="page-header__item page-header__item--stock nav-stock">
           <ul class="nav-stock__list">
@@ -45,7 +45,7 @@
           </ul>
         </nav>
         <span class="page-header__delivery">Бесплатная доставка по России</span>
-        <button class="page-header__toggle" type="button">Открыть меню</button>
+        <button class="page-header__toggle page-header__toggle--close" type="button">Открыть меню</button>
       </div>
     </header>
     <main class="page-main">
@@ -61,20 +61,20 @@
           </div>
           <form class="knitting-form__data" method="post" action="https://echo.htmlacademy.ru">
             <div class="knitting-form__fieldset">
-              <div class="knitting-form__inner">
+              <div class="knitting-form__inner knitting-form__inner--type">
                 <h3 class="knitting-form__legend">
                   Тип
                 </h3>
                 <ul class="knitting-form__list knitting-form__list--type">
                   <li class="knitting-form__item knitting-form__item--type">
-                    <label class="knitting-form__label">
-                      <input class="knitting-form__radio" type="radio" name="type" value="acc">
+                    <input id="acc" class="knitting-form__radio visually-hidden" type="radio" name="type" value="acc" checked>
+                    <label for="acc" class="knitting-form__label">
                       Аксессуар для интерьера
                     </label>
                   </li>
                   <li class="knitting-form__item knitting-form__item--type">
-                    <label class="knitting-form__label">
-                      <input class="knitting-form__radio" type="radio" name="type" value="toy">
+                    <input id="toy" class="knitting-form__radio visually-hidden" type="radio" name="type" value="toy">
+                    <label for="toy" class="knitting-form__label">
                       Детская игрушка
                     </label>
                   </li>
@@ -88,38 +88,38 @@
                 </h3>
                 <ul class="knitting-form__list knitting-form__list--color">
                   <li class="knitting-form__item knitting-form__item--color">
-                    <label class="knitting-form__label">
-                      <input class="knitting-form__radio" type="checkbox" name="color" value="white">
+                    <input id="white" class="knitting-form__checkbox visually-hidden" type="checkbox" name="color" value="white" checked>
+                    <label for="white" class="knitting-form__label">
                       Белый
                     </label>
                   </li>
                   <li class="knitting-form__item knitting-form__item--color">
-                    <label class="knitting-form__label">
-                      <input class="knitting-form__radio" type="checkbox" name="color" value="gray">
+                    <input id="gray" class="knitting-form__checkbox visually-hidden" type="checkbox" name="color" value="gray" checked>
+                    <label for="gray" class="knitting-form__label">
                       Серый
                     </label>
                   </li>
                   <li class="knitting-form__item knitting-form__item--color">
-                    <label class="knitting-form__label">
-                      <input class="knitting-form__radio" type="checkbox" name="color" value="tiffany">
+                    <input id="tiffany" class="knitting-form__checkbox visually-hidden" type="checkbox" name="color" value="tiffany">
+                    <label for="tiffany" class="knitting-form__label">
                       «Тиффани»
                     </label>
                   </li>
                   <li class="knitting-form__item knitting-form__item--color">
-                    <label class="knitting-form__label">
-                      <input class="knitting-form__radio" type="checkbox" name="color" value="black">
+                    <input id="black" class="knitting-form__checkbox visually-hidden" type="checkbox" name="color" value="black">
+                    <label for="black" class="knitting-form__label">
                       Черный
                     </label>
                   </li>
                   <li class="knitting-form__item knitting-form__item--color">
-                    <label class="knitting-form__label">
-                      <input class="knitting-form__radio" type="checkbox" name="color" value="pink">
+                    <input id="pink" class="knitting-form__checkbox visually-hidden" type="checkbox" name="color" value="pink">
+                    <label for="pink" class="knitting-form__label">
                       Розовый
                     </label>
                   </li>
                   <li class="knitting-form__item knitting-form__item--color">
-                    <label class="knitting-form__label">
-                      <input class="knitting-form__radio" type="checkbox" name="color" value="orange">
+                    <input id="orange" class="knitting-form__checkbox visually-hidden" type="checkbox" name="color" value="orange">
+                    <label for="orange" class="knitting-form__label">
                       Оранжевый
                     </label>
                   </li>
@@ -154,7 +154,7 @@
               </div>
             </div>
             <div class="knitting-form__fieldset knitting-form__fieldset--personal knitting-form__fieldset--contacts">
-              <div class="knitting-form__inner">
+              <div class="knitting-form__inner knitting-form__inner--contacts">
                 <h3 class="knitting-form__legend knitting-form__legend--contacts visually-hidden">
                   Ваши контакты
                 </h3>
@@ -166,7 +166,7 @@
                     <input id="phone" class="knitting-form__input" type="phone" placeholder="+7 XXX XXX XX XX*" name="phone" required>
                   </li>
                   <li class="knitting-form__item knitting-form__item--contacts">
-                    <label for="email" class="knitting-form__label knitting-form__label--personal knitting-form__label--contacts">
+                    <label for="email" class="knitting-form__label knitting-form__label--personal knitting-form__label--contacts knitting-form__label--email">
                       E-mail
                     </label>
                     <input id="email" class="knitting-form__input" type="email" placeholder="Ваш Email*" name="email" required>
@@ -175,8 +175,8 @@
               </div>
             </div>
             <div class="knitting-form__fieldset knitting-form__fieldset--other">
-              <div class="knitting-form__inner">
-                <label for="wish" class="knitting-form__label knitting-form__label--personal knitting-form__label--contacts">
+              <div class="knitting-form__inner knitting-form__inner--other">
+                <label for="wish" class="knitting-form__label knitting-form__label--personal knitting-form__label--contacts knitting-form__label--other">
                   Доп
                 </label>
                 <textarea is="wish" class="knitting-form__textarea" name="wish">Опишите все ваши пожелания к заказу</textarea>
@@ -193,35 +193,37 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo-link" href="index.html">
-        <img src="./img/logo-footer.svg" width="102" height="34">
-      </a>
-      <section class="social">
-        <div class="social__container container">
-          <h2 class="social__title visually-hidden">
-            Мы в социальных сетях
-          </h2>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="#">Инстаграм</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">Фейсбук</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">Твиттер</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="developed">
-        <div class="developed__container container">
-          <span class="developed__text">
-            Разработано
-          </span>
-          <a class="developed__link" href="#">HTMLAcademy.ru</a>
-        </div>
-      </section>
+      <div class="page-footer__container container">
+        <a class="page-footer__logo-link" href="index.html">
+          <img src="./img/logo-footer.svg" width="102" height="34">
+        </a>
+        <section class="social">
+          <div class="social__container container">
+            <h2 class="social__title visually-hidden">
+              Мы в социальных сетях
+            </h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--inst" href="#">Инстаграм</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--fb" href="#">Фейсбук</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--tw" href="#">Твиттер</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="developed">
+          <div class="developed__container container">
+            <span class="developed__text">
+              Разработано
+            </span>
+            <a class="developed__link" href="#">HTMLAcademy.ru</a>
+          </div>
+        </section>
+      </div>
     </footer>
   </body>
 </html>

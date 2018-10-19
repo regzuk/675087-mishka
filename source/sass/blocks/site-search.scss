@@ -1,5 +1,21 @@
 .site-search__input-label {
   display: block;
+  position: relative;
+
+  &::before {
+    content: "";
+
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: url("../../img/icon-search.svg") no-repeat center center;
+
+    left: 30px;
+    top: 32px;
+
+    opacity: 0.2;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -7,5 +23,10 @@
     font-size: 0;
     box-shadow: -1px 0 0 #ebebeb;
     width: 88px;
+
+    &::before {
+      left: 36px;
+      top: 36px;
+    }
   }
 }

@@ -10,5 +10,37 @@
   background-color: $grey-color;
   text-align: center;
   margin: 0;
-  padding: 75px 0;
+  padding: 70px 0 75px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    position: relative;
+    font-size: 43px;
+    line-height: 50px;
+    padding: 95px 0 90px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+
+      height: 23px;
+      width: 100%;
+      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: 0 0;
+      background-size: cover;
+      bottom: -5px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    position: relative;
+    font-size: 53px;
+    line-height: 57px;
+    padding: 95px 0 105px;
+  }
 }

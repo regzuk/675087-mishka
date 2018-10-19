@@ -1,11 +1,13 @@
 .production {
-  margin-top: 30px;
-  padding: 30px 0;
+  margin-top: 28px;
+  padding: 20px 0;
+  padding-bottom: 30px;
   border: 1px solid #ebebeb;
 }
 
 @media (min-width: $tablet-width) {
   .production {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -18,10 +20,14 @@
   .production {
     flex-wrap: wrap;
     height: 455px;
+    margin-top: 55px;
+    padding-bottom: 0;
+    margin-bottom: 104px;
   }
 }
 
 .production__title {
+  position: relative;
   margin: 0;
   padding: 0;
   padding-left: 90px;
@@ -29,6 +35,18 @@
   width: 130px;
   font-size: 17px;
   font-weight: bold;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    top: 8px;
+    left: 33px;
+
+    background: url("../../img/icon-video.svg") no-repeat center center;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -38,7 +56,13 @@
     line-height: 24px;
     width: auto;
 
-    margin-top: 43px;
+    margin-top: 39px;
+    padding-left: 105px;
+
+    &::after {
+      top: -5px;
+      left: 41px;
+    }
   }
 }
 
@@ -46,7 +70,13 @@
   .production__title {
     width: 150px;
 
-    margin-top: 100px;
+    margin-top: 95px;
+    padding-left: 76px;
+
+    &::after {
+      top: -53px;
+      left: 80px;
+    }
   }
 }
 
@@ -74,9 +104,9 @@
 .production__description {
   font-size: 13px;
   color: $content-text-color;
-  margin-top: 34px;
+  margin-top: 20px;
   margin-left: 34px;
-  margin-bottom: 29px;
+  margin-bottom: 26px;
   width: 190px;
 }
 
@@ -84,7 +114,7 @@
   .production__description {
     order: 3;
     width: auto;
-    margin: 41px 43px 40px 43px;
+    margin: 10px 43px 40px 43px;
     font-size: 15px;
   }
 }
@@ -92,20 +122,30 @@
 @media (min-width: $desktop-width) {
   .production__description {
     width: 240px;
-    margin: 41px 43px 40px 43px;
-    font-size: 15px;
+    margin: 10px 43px 40px 78px;
+    line-height: 30px;
   }
 }
 
 
 .production__book-button {
-  width: 184px;
+  width: 192px;
   margin: 0 34px;
+  letter-spacing: 0.5px;
 }
 
 @media (min-width: $tablet-width) {
   .production__book-button {
     order: 4;
-    width: auto;
+    margin: 3px 42px;
+    width: 584px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production__book-button {
+    margin: 5px;
+    margin-left: 75px;
+    width: 230px;
   }
 }
