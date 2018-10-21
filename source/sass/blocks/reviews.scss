@@ -172,9 +172,21 @@
   width: 100%;
   border: 1px solid #ebebeb;
   background: url("../../img/icon-left-arrow.svg") no-repeat center center;
+  background-color: transparent;
 
   &--next {
     transform: rotate(180deg);
+  }
+
+  &:focus,
+  &:hover {
+    background-color: transparent;
+    opacity: 0.6;
+  }
+
+  &:active {
+    background-color: transparent;
+    opacity: 0.3;
   }
 }
 

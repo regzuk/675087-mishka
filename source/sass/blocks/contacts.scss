@@ -111,6 +111,15 @@
   text-decoration: none;
   border-bottom: 1px solid #6bc5b3;
   margin-left: 32px;
+
+  &:focus,
+  &:hover {
+    color: $contrast-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

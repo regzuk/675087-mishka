@@ -20,6 +20,17 @@
   }
 }
 
+.nav-stock__item {
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .nav-stock__item {
     &:first-child {

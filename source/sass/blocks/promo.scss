@@ -120,6 +120,17 @@ $title-hor-padding: 38px;
     opacity: 0.2;
   }
 
+  &:focus,
+  &:hover {
+    position: relative;
+    top: -5px;
+    padding-bottom: 33px;
+  }
+
+  &:active {
+    color: rgba(246, 252, 251, 0.3);
+  }
+
   &--items {
     background-color: $contrast-color;
 
@@ -152,6 +163,11 @@ $title-hor-padding: 38px;
     padding-right: $tablet-content-width / 2 - 110px - 35px;
     padding-top: 35px - 7px;
     padding-bottom: 32px;
+
+    &:focus,
+    &:hover {
+      padding-bottom: 37px;
+    }
   }
 }
 

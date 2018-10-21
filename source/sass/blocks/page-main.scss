@@ -33,12 +33,15 @@
       background-size: cover;
       bottom: -5px;
     }
+
+    &--index {
+      position: absolute;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__title {
-    position: relative;
     font-size: 53px;
     line-height: 57px;
     padding: 95px 0 105px;

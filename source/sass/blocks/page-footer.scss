@@ -22,6 +22,16 @@
 @media (min-width: $tablet-width) {
   .page-footer__logo-link {
     display: block;
+    filter: brightness(0);
+
+    &:focus,
+    &:hover {
+      filter: none;
+    }
+
+    &:active {
+      opacity: 0.2;
+    }
   }
 }
 

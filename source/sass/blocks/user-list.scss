@@ -26,10 +26,31 @@
     height: 19px;
     background: url("../../img/icon-cart.svg") no-repeat center center;
 
+    filter: grayscale(1);
+
     left: 30px;
     top: 32px;
 
     opacity: 0.2;
+  }
+
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+
+    &::before {
+      filter: grayscale(0);
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::before {
+      filter: grayscale(0);
+      opacity: 0.2;
+    }
   }
 }
 

@@ -67,6 +67,14 @@
   border: 2px solid #ececec;
   line-height: 16px;
 
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: transparent;
+    color: #000000;
+    border-color: #c6c6c6;
+  }
+
   .modal-add-cart__size-input:checked + & {
     border-color: $contrast-color;
   }
