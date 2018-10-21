@@ -4,7 +4,7 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    background: #ffffff url("../../img/review@1x.jpg") no-repeat auto 100%;
+    background: #ffffff url("../img/review@1x.jpg") no-repeat auto 100%;
 
     margin-top: 17px;
     margin-bottom: 68px;
@@ -35,7 +35,7 @@
 @media (min-width: $desktop-width) {
   .reviews__container {
     position: relative;
-    background: #ffffff url("../../img/review@1x.jpg") no-repeat;
+    background: #ffffff url("../img/review@1x.jpg") no-repeat;
     box-sizing: border-box;
     padding: 70px 0 100px 175px;
     margin-bottom: 70px;
@@ -46,7 +46,7 @@
       display: block;
       height: 23px;
       width: 100%;
-      background-image: url("../../img/bg-zigzag-line.svg");
+      background-image: url("../img/bg-zigzag-line.svg");
       background-size: contain;
       background-repeat: repeat-x;
       transform: rotate(180deg);
@@ -171,7 +171,7 @@
   font-size: 0;
   width: 100%;
   border: 1px solid #ebebeb;
-  background: url("../../img/icon-left-arrow.svg") no-repeat center center;
+  background: url("../img/icon-left-arrow.svg") no-repeat center center;
   background-color: transparent;
 
   &--next {
