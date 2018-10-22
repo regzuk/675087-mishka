@@ -144,6 +144,13 @@
   }
 }
 
+.contacts__map {
+  width: 320px;
+  height: 457px;
+
+  margin: auto;
+}
+
 @media (min-width: $tablet-width) {
   .contacts__map {
     width: 768px;

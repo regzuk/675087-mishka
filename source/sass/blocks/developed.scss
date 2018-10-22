@@ -26,6 +26,16 @@
   height: 40px;
   background-image: url("../img/htmlacademy.svg");
   background-size: cover;
+  opacity: 0.6;
+
+  &:focus,
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

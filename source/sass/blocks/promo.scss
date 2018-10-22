@@ -83,11 +83,14 @@ $title-hor-padding: 38px;
 
 .promo__nav-list {
   @include clear-list;
+  margin: 0 auto;
+  max-width: 320px;
 }
 
 @media (min-width: $tablet-width) {
   .promo__nav-list {
     display: flex;
+    max-width: none;
   }
 }
 

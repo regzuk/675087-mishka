@@ -9,7 +9,7 @@
   <body>
     <header class="page-header">
       <div class="page-header__inner">
-        <a class="page-header__logo" href="index.html" alt="На главную">
+        <a class="page-header__logo page-header__logo--link" href="index.html" alt="На главную">
           <figure class="page-header__logo-wrapper">
             <img class="page-header__logo-img" width="86" height="35" src="./img/logo-mobile.svg">
           </figure>
@@ -45,7 +45,7 @@
           </ul>
         </nav>
         <span class="page-header__delivery">Бесплатная доставка по России</span>
-        <button class="page-header__toggle page-header__toggle--close" type="button">Открыть меню</button>
+        <button class="page-header__toggle page-header__toggle--close  visually-hidden" type="button">Открыть меню</button>
       </div>
     </header>
     <main class="page-main">
@@ -163,13 +163,13 @@
                     <label for="phone" class="knitting-form__label knitting-form__label--personal knitting-form__label--contacts">
                       Тел
                     </label>
-                    <input id="phone" class="knitting-form__input" type="phone" placeholder="+7 XXX XXX XX XX*" name="phone" required>
+                    <input id="phone" class="knitting-form__input knitting-form__input--contacts" type="phone" placeholder="+7 XXX XXX XX XX*" name="phone" required>
                   </li>
                   <li class="knitting-form__item knitting-form__item--contacts">
                     <label for="email" class="knitting-form__label knitting-form__label--personal knitting-form__label--contacts knitting-form__label--email">
                       E-mail
                     </label>
-                    <input id="email" class="knitting-form__input" type="email" placeholder="Ваш Email*" name="email" required>
+                    <input id="email" class="knitting-form__input knitting-form__input--contacts" type="email" placeholder="Ваш Email*" name="email" required>
                   </li>
                 </ul>
               </div>
