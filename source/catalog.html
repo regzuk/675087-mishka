@@ -9,7 +9,7 @@
   <body>
     <header class="page-header">
       <div class="page-header__inner">
-        <a class="page-header__logo" href="index.html" alt="На главную">
+        <a class="page-header__logo page-header__logo--link" href="index.html" alt="На главную">
           <figure class="page-header__logo-wrapper">
             <img class="page-header__logo-img" width="86" height="35" src="./img/logo-mobile.svg">
           </figure>
@@ -45,7 +45,7 @@
           </ul>
         </nav>
         <span class="page-header__delivery">Бесплатная доставка по России</span>
-        <button class="page-header__toggle" type="button">Открыть меню</button>
+        <button class="page-header__toggle page-header__toggle--close  visually-hidden" type="button">Открыть меню</button>
       </div>
     </header>
     <main class="page-main">
@@ -106,8 +106,8 @@
               Процесс производства
             </h3>
             <figure class="production__video-img-wrapper">
-              <img class="production__video-img" src="http://placehold.it/260x195"
-                width="260" height="195" >
+              <img class="production__video-img" src="http://placehold.it/260x150"
+                width="260" height="150" >
             </figure>
               <p class="production__description">
                 По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
@@ -118,37 +118,39 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo-link" href="index.html">
-        <img src="./img/logo-footer.svg" width="102" height="34">
-      </a>
-      <section class="social">
-        <div class="social__container container">
-          <h2 class="social__title visually-hidden">
-            Мы в социальных сетях
-          </h2>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="#">Инстаграм</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">Фейсбук</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">Твиттер</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="developed">
-        <div class="developed__container container">
-          <span class="developed__text">
-            Разработано
-          </span>
-          <a class="developed__link"  href="#">HTMLAcademy.ru</a>
-        </div>
-      </section>
+      <div class="page-footer__container container">
+        <a class="page-footer__logo-link" href="index.html">
+          <img src="./img/logo-footer.svg" width="102" height="34">
+        </a>
+        <section class="social">
+          <div class="social__container container">
+            <h2 class="social__title visually-hidden">
+              Мы в социальных сетях
+            </h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--inst" href="#">Инстаграм</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--fb" href="#">Фейсбук</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--tw" href="#">Твиттер</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="developed">
+          <div class="developed__container container">
+            <span class="developed__text">
+              Разработано
+            </span>
+            <a class="developed__link" href="#">HTMLAcademy.ru</a>
+          </div>
+        </section>
+      </div>
     </footer>
-    <section class="modal-add-cart">
+    <section class="modal-add-cart  visually-hidden">
       <div class="modal-add-cart__container container">
         <h2 class="modal-add-cart__title title">
           Добавить в корзину

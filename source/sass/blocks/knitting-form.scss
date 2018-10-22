@@ -9,40 +9,40 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .knitting-form__inner {
-    margin: auto;
-    margin-top: 66px;
-    margin-bottom: 70px;
-    width: $tablet-content-width;
-    display: flex;
-
-    &--description {
-      margin-bottom: 0;
-    }
-
-    &--submit {
-      margin-top: 0;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-    }
+.knitting-form__inner {
+  &--submit {
+    margin-top: 10px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .knitting-form__inner {
     margin: auto;
-    margin-top: 66px;
+    margin-top: 68px;
     margin-bottom: 70px;
     width: $tablet-content-width;
     display: flex;
 
     &--description {
       margin-bottom: 0;
+      margin-top: 38px;
+    }
+
+    &--type {
+      margin-top: 50px;
+    }
+
+    &--contacts {
+      margin-bottom: 48px;
+    }
+
+    &--other {
+      margin-bottom: 50px;
     }
 
     &--submit {
       margin-top: 0;
+      margin-bottom: 50px;
       flex-direction: row-reverse;
       justify-content: space-between;
     }
@@ -55,32 +55,28 @@
 
     &--description {
       width: 700px;
+
+      margin-top: 120px;
+    }
+
+    &--type {
+      margin-top: 72px;
+    }
+
+    &--personal {
+      margin-top: 65px;
+    }
+
+    &--submit {
+      width: 700px;
     }
   }
 }
 
-// @media (min-width: $tablet-width) {
-//   .knitting-form__inner {
-//     display: flex;
-//     flex-direction: row-reverse;
-//     justify-content: space-between;
-//     padding: 0 50px;
-//     margin-bottom: 50px;
-//   }
-// }
-//
-// @media (min-width: $desktop-width) {
-//   .knitting-form__inner {
-//     padding: 0 225px;
-//     margin-bottom: 70px;
-//   }
-// }
-
-
 .knitting-form__description {
   font-size: 13px;
   color: $content-text-color;
-  padding: 30px 0;
+  padding: 25px 0 23px;
   margin: 0;
 }
 
@@ -94,7 +90,7 @@
 @media (min-width: $desktop-width) {
   .knitting-form__description {
     // margin-top: 129px;
-    // padding: 0 225px;
+    padding: 0;
   }
 }
 
@@ -104,10 +100,9 @@
 }
 
 .knitting-form__fieldset {
-  // &--personal {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
+  &--other {
+    margin-top: -15px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -120,11 +115,12 @@
 
 @media (min-width: $desktop-width) {
   .knitting-form__fieldset {
-    padding: 66px 0 70px 0;
+    // padding: 66px 0 70px 0;
   }
 }
 
 .knitting-form__legend {
+  position: relative;
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
@@ -137,19 +133,50 @@
   &--personal {
     margin-bottom: 9px;
   }
+
+  &--contacts {
+    position: absolute;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+
+    height: 1px;
+    width: 197px;
+    background-color: $contrast-color;
+
+    top: 8px;
+    left: 63px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .knitting-form__legend {
     width: 166px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .knitting-form__legend {
+    width: 114px;
   }
 }
 
 .knitting-form__list {
   @include clear-list;
 
-  padding-top: 7px;
-  padding-bottom: 33px;
+  padding-top: 14px;
+  padding-bottom: 44px;
+
+  &--personal {
+    margin-bottom: -48px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -158,9 +185,19 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 502px;
+    align-content: space-between;
 
     &--type {
       flex-direction: column;
+    }
+
+    &--personal {
+      margin-bottom: -20px;
+    }
+
+    &--contacts {
+      width: 100%;
+      max-width: 100%;
     }
   }
 }
@@ -169,18 +206,52 @@
   .knitting-form__list {
     max-width: 875px;
 
+    &--color {
+      justify-content: space-between;
+      max-width: 750px;
+    }
+
     &--personal {
       flex-direction: column;
+      flex-grow: 1;
+      margin-right: 115px;
+
+      font-size: 19px;
+      line-height: 18px;
     }
 
     &--contacts {
       flex-direction: column;
+      margin-right: 115px;
     }
   }
 }
 
 .knitting-form__item {
-  margin-top: 20px;
+  margin-top: 25px;
+
+  &:first-child {
+    margin-top: 20px;
+  }
+
+  &--color {
+    margin-top: 44px;
+  }
+
+  &--personal {
+    margin-top: 23px;
+    display: flex;
+    flex-direction: column;
+
+    &:first-child {
+      margin-top: 3px;
+    }
+  }
+
+  &--contacts {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -192,11 +263,27 @@
     }
 
     &--color {
-      width: 250px;
+      width: 220px;
 
       &:nth-child(2) {
         margin-top: 0;
       }
+
+      &:nth-child(2n) {
+        margin-left: 40px;
+      }
+    }
+
+    &--personal {
+      flex-direction: row;
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    &--contacts {
+      display: flex;
+      width: 100%;
+      margin-top: 40px;
     }
   }
 }
@@ -206,6 +293,10 @@
     &--color {
       &:nth-child(3) {
         margin-top: 0;
+      }
+
+      &:nth-child(2n) {
+        margin-left: 0;
       }
     }
   }
@@ -217,20 +308,282 @@
   color: #000000;
   font-weight: bold;
 
+  display: block;
+  padding-left: 63px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+  }
+
+  .knitting-form__radio + &::before {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #434343;
+    border-radius: 50%;
+    top: -10px;
+    left: 0;
+  }
+
+  .knitting-form__radio + &:focus,
+  .knitting-form__radio + &:hover,
+  .knitting-form__checkbox + &:focus,
+  .knitting-form__checkbox + &:hover {
+    &::before {
+      border-color: $contrast-color;
+    }
+  }
+
+  .knitting-form__radio + &:active,
+  .knitting-form__checkbox + &:active {
+    &::before {
+      border-color: #434343;
+      opacity: 0.3;
+    }
+  }
+
+  .knitting-form__radio:checked + &::after {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $contrast-color;
+    top: 2px;
+    left: 12px;
+  }
+
+  .knitting-form__checkbox + &::before {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #434343;
+    top: -10px;
+    left: 0;
+  }
+
+  .knitting-form__checkbox:checked + &::after {
+    width: 20px;
+    height: 8px;
+    border-left: 2px solid #434343;
+    border-bottom: 2px solid #434343;
+    top: 3px;
+    left: 10px;
+    transform: rotate(-45deg);
+  }
+
   &--personal {
-    margin-top: 24px;
+    padding-left: 0;
   }
 
   &--contacts {
+    position: relative;
     line-height: 16px;
     color: $contrast-color;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+
+      height: 1px;
+      width: 197px;
+      background-color: $contrast-color;
+
+      top: 8px;
+      left: 63px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 25px;
+      height: 25px;
+      background: url("../img/icon-phone.svg") no-repeat center center;
+      top: 33px;
+      right: 9px;
+
+      opacity: 0.2;
+    }
+  }
+
+  &--email {
+    margin-bottom: 10px;
+    margin-top: 6px;
+
+    &::before {
+      width: 32px;
+      height: 32px;
+      background: url("../img/icon-mail.svg") no-repeat center center;
+      right: 5px;
+    }
+
+    &::after {
+      left: 70px;
+      width: 190px;
+    }
+  }
+
+  &--other {
+    &::before {
+      display: none;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .knitting-form__label {
     font-size: 19px;
-    margin-right: 80px;
+    margin-right: 60px;
+    padding-left: 80px;
+
+    .knitting-form__radio + &::before {
+      width: 48px;
+      height: 48px;
+      top: -15px;
+      left: 0;
+    }
+
+    .knitting-form__radio:checked + &::after {
+      width: 22px;
+      height: 22px;
+      top: 0;
+      left: 14px;
+    }
+
+    .knitting-form__checkbox + &::before {
+      width: 52px;
+      height: 52px;
+      top: -18px;
+      left: 0;
+    }
+
+    .knitting-form__checkbox:checked + &::after {
+      width: 30px;
+      height: 12px;
+      top: 0;
+      left: 12px;
+    }
+
+    &--personal {
+      padding-left: 0;
+      margin-right: 25px;
+    }
+
+    &--contacts {
+      display: block;
+      width: 230px;
+      margin-right: 0;
+
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        top: -9px;
+        right: -476px;
+      }
+    }
+
+    &--email {
+      margin-bottom: 10px;
+      margin-top: 0;
+
+      &::before {
+        right: -482px;
+        top: -12px;
+      }
+    }
+
+    &--other {
+      padding-top: 15px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .knitting-form__label {
+    &--contacts {
+      width: 135px;
+
+      &::before {
+        top: -9px;
+        right: -695px;
+      }
+    }
+
+    &--other {
+      width: 150px;
+    }
+  }
+}
+
+.knitting-form__input {
+  // margin-top: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #000000;
+
+  width: 100%;
+  font-size: 17px;
+  line-height: 18px;
+
+  &--contacts {
+    // margin-top: 25px;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    border-bottom-color: $contrast-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .knitting-form__input {
+    flex-grow: 1;
+
+    padding-top: 0;
+
+    padding-left: 20px;
+  }
+}
+
+
+.knitting-form__textarea {
+  font-size: 17px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  padding: 15px 16px;
+  border: 2px solid #000000;
+
+  margin-top: 15px;
+
+  box-sizing: border-box;
+  width: 100%;
+  height: 142px;
+
+  &:focus,
+  &:hover,
+  &:active {
+    border-color: $contrast-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .knitting-form__textarea {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .knitting-form__textarea {
+    margin-right: 115px;
   }
 }
 
@@ -239,12 +592,18 @@
   font-size: 14px;
   line-height: 16px;
   color: $content-text-color;
+}
 
-  margin-top: 14px;
+@media (min-width: $tablet-width) {
+  .knitting-form__note {
+    padding-top: 7px;
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .knitting-form__submit-button {
-  margin-top: 30px;
+  margin-top: 32px;
 }
 
 @media (min-width: $tablet-width) {

@@ -4,12 +4,62 @@
 @media (min-width: $tablet-width) {
   .user-list {
     display: flex;
-    margin-left: 209px;
+    // margin-left: 209px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .user-list {
     margin-left: 101px;
+  }
+}
+
+.user-list__cart {
+  position: relative;
+
+  &::before {
+    content: "";
+
+    display: block;
+    position: absolute;
+    width: 21px;
+    height: 19px;
+    background: url("../img/icon-cart.svg") no-repeat center center;
+
+    filter: grayscale(1);
+
+    left: 30px;
+    top: 32px;
+
+    opacity: 0.2;
+  }
+
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+
+    &::before {
+      filter: grayscale(0);
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::before {
+      filter: grayscale(0);
+      opacity: 0.2;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .user-list__cart {
+    padding-left: 83px;
+
+    &::before {
+      top: 34px;
+    }
   }
 }

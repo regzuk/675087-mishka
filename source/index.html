@@ -9,11 +9,11 @@
   <body>
     <header class="page-header">
       <div class="page-header__inner">
-        <a class="page-header__logo" href="index.html" alt="На главную">
+        <div class="page-header__logo">
           <figure class="page-header__logo-wrapper">
             <img class="page-header__logo-img" width="86" height="35" src="./img/logo-mobile.svg">
           </figure>
-        </a>
+        </div>
         <nav class="page-header__item page-header__item--nav nav">
           <ul class="nav__list">
             <li class="nav__list-item">
@@ -45,7 +45,7 @@
           </ul>
         </nav>
         <span class="page-header__delivery">Бесплатная доставка по России</span>
-        <button class="page-header__toggle" type="button">Открыть меню</button>
+        <button class="page-header__toggle page-header__toggle--close visually-hidden" type="button">Открыть меню</button>
       </div>
     </header>
     <main class="page-main">
@@ -55,7 +55,7 @@
       <section class="promo">
         <div class="promo__inner">
           <h2 class="promo__title title">
-            Милые штуки ручной работы для дома
+            Милые штуки ручной<br>работы для дома
           </h2>
           <nav class="promo__nav">
             <ul class="promo__nav-list">
@@ -130,22 +130,22 @@
             Коротко о нас:
           </h2>
           <ul class="about__list">
-            <li class="about__item">
+            <li class="about__item about__item--eco-friendly">
               Экологически чистые материалы
             </li>
-            <li class="about__item">
+            <li class="about__item about__item--style">
               Скандинавский стиль по российской цене
             </li>
-            <li class="about__item">
+            <li class="about__item about__item--likes">
               Увеличивает лайки на фотографиях
             </li>
-            <li class="about__item">
+            <li class="about__item about__item--handmade">
               Связано вручную с любовью и умилением
             </li>
-            <li class="about__item">
+            <li class="about__item about__item--fatherland">
               Поддержка отечественного производителя
             </li>
-            <li class="about__item">
+            <li class="about__item about__item--gift">
               Поставляется в подарочной упаковке
             </li>
           </ul>
@@ -174,10 +174,10 @@
               </div>
               <ul class="reviews__control-list">
                 <li class="reviews__control-item">
-                  <button class="reviews__control button" type="button">Назад</button>
+                  <button class="reviews__control reviews__control--prev button" type="button">Назад</button>
                 </li>
                 <li class="reviews__control-item">
-                  <button class="reviews__control button" type="button">Вперед</button>
+                  <button class="reviews__control reviews__control--next button" type="button">Вперед</button>
                 </li>
               </ul>
               <a class="reviews__write-button button" href="#">Написать</a>
@@ -232,13 +232,13 @@
             </h2>
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link" href="#">Инстаграм</a>
+                <a class="social__link social__link--inst" href="#">Инстаграм</a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="#">Фейсбук</a>
+                <a class="social__link social__link--fb" href="#">Фейсбук</a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="#">Твиттер</a>
+                <a class="social__link social__link--tw" href="#">Твиттер</a>
               </li>
             </ul>
           </div>
@@ -253,7 +253,7 @@
         </section>
       </div>
     </footer>
-    <section class="modal-add-cart">
+    <section class="modal-add-cart visually-hidden">
       <div class="modal-add-cart__container container">
         <h2 class="modal-add-cart__title title">
           Добавить в корзину
