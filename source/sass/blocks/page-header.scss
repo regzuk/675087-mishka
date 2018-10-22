@@ -38,9 +38,11 @@
   line-height: 0;
 
   min-height: 78px;
-
-  // background: url("../../img/logo-mobile.svg") no-repeat center center;
   box-shadow: 0 1px 0 #ebebeb;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &--link {
     &:focus,
@@ -60,8 +62,6 @@
 
     width: 113px;
     height: 46px;
-
-    // background: url("../../img/logo-tablet.svg") no-repeat center center;
     box-shadow: none;
   }
 }
@@ -70,20 +70,9 @@
   .page-header__logo {
     order: 1;
 
-    width: 113px;
-    height: 46px;
-
-    // background: url("../../img/logo-desktop.svg") no-repeat center center;
+    width: 148px;
+    height: 73px;
   }
-}
-
-.page-header__logo-wrapper {
-  padding: 0;
-  margin: auto;
-  margin-top: 22px;
-  margin-bottom: 22px;
-  width: 85px;
-  height: 36px;
 }
 
 .page-header__item {
