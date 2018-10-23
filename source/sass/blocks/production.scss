@@ -3,6 +3,8 @@
   padding: 20px 0;
   padding-bottom: 30px;
   border: 1px solid #ebebeb;
+
+  @include item-backround-hover;
 }
 
 @media (min-width: $tablet-width) {
@@ -125,6 +127,8 @@
 
   left: 50%;
   margin-left: -51px;
+
+  transition: width 1s, height 1s, margin-top 1s, margin-left 1s;
 
   $video-button-hover-size-multiple: 1.2;
   $video-button-active-size-multiple: 0.8;

@@ -131,7 +131,7 @@
             <span class="featured__price">
               Цена: 990 руб.
             </span>
-            <a class="featured__book-button button" href="#">Заказать</a>
+            <a class="featured__book-button button" href="price.html">Заказать</a>
           </div>
         </div>
       </section>
@@ -196,38 +196,50 @@
           </div>
       </section>
       <section class="contacts">
-        <div class="contacts__container container">
-          <h2 class="contacts__title title">
-            Контакты
-          </h2>
-          <ul class="contacts__list">
-            <li class="contacts__list-item">
-              <span class="contacts__type">e-mail:</span>
-              <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-            </li>
-            <li class="contacts__list-item">
-              <span class="contacts__type">
-                адрес:
-              </span>
-              <p class="contacts__address">
-                <span class="contacts__address-part">
-                  г. Санкт-Петербург,
+        <div class="contacts__wrapper">
+          <div class="contacts__container container">
+            <h2 class="contacts__title title">
+              Контакты
+            </h2>
+            <ul class="contacts__list">
+              <li class="contacts__list-item">
+                <span class="contacts__type">e-mail:</span>
+                <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              </li>
+              <li class="contacts__list-item">
+                <span class="contacts__type">
+                  адрес:
                 </span>
-                <span class="contacts__address-part">
-                  ул. Большая Конюшенная,
-                </span>
-                <span class="contacts__address-part">
-                  д. 19/8, офис 101
-                </span>
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="contacts__map">
-          <iframe class="contacts__map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2995516972503!2d30.322352914579117!3d59.938794197981714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0x199a07f90211344!2z0KHQsNGI0LAg0JvRjtC20LU!5e0!3m2!1sru!2sru!4v1540241073435" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-        <div class="contacts__button-container container">
-          <a class="contacts__write-button button" href="#">Напишите нам</a>
+                <p class="contacts__address">
+                  <span class="contacts__address-part">
+                    г. Санкт-Петербург,
+                  </span>
+                  <span class="contacts__address-part">
+                    ул. Большая Конюшенная,
+                  </span>
+                  <span class="contacts__address-part">
+                    д. 19/8, офис 101
+                  </span>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__map">
+            <picture class="contacts__map-frame contacts__map-frame--img">
+              <source media="(min-width: 1250px)" srcset="./img/map-desktop@1x.jpg 1x,
+                                                          ./img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/map-tablet@1x.jpg 1x,
+                                                          ./img/map-tablet@2x.jpg 2x">
+              <img class="contacts__map-img" src="./img/map-mobile@1x.jpg"
+              srcset="./img/map-mobile@1x.jpg 1x,
+                      ./img/map-mobile@2x.jpg 2x"
+                sizes="(min-width: 768px) (min-width: 1250px) 525px : 768px : 320px">
+            </picture>
+            <iframe class="contacts__map-frame--hidden contacts__map-frame--hidden" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2995516972503!2d30.322352914579117!3d59.938794197981714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0x199a07f90211344!2z0KHQsNGI0LAg0JvRjtC20LU!5e0!3m2!1sru!2sru!4v1540241073435" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          <div class="contacts__button-container container">
+            <a class="contacts__write-button button" href="#">Напишите нам</a>
+          </div>
         </div>
       </section>
     </main>

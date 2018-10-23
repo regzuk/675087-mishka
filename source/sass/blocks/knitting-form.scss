@@ -284,6 +284,8 @@
       display: flex;
       width: 100%;
       margin-top: 40px;
+
+      flex-direction: row;
     }
   }
 }
@@ -475,7 +477,7 @@
 
     &--contacts {
       display: block;
-      width: 230px;
+      width: 167px;
       margin-right: 0;
 
       &::after {
@@ -500,6 +502,7 @@
 
     &--other {
       padding-top: 15px;
+      width: 230px;
     }
   }
 }
@@ -507,7 +510,7 @@
 @media (min-width: $desktop-width) {
   .knitting-form__label {
     &--contacts {
-      width: 135px;
+      width: 115px;
 
       &::before {
         top: -9px;
@@ -533,10 +536,6 @@
   font-size: 17px;
   line-height: 18px;
 
-  &--contacts {
-    // margin-top: 25px;
-  }
-
   &:focus,
   &:hover,
   &:active {
@@ -547,6 +546,7 @@
 @media (min-width: $tablet-width) {
   .knitting-form__input {
     flex-grow: 1;
+    width: auto;
 
     padding-top: 0;
 
@@ -563,6 +563,8 @@
   border: 2px solid #000000;
 
   margin-top: 15px;
+
+  resize: none;
 
   box-sizing: border-box;
   width: 100%;
