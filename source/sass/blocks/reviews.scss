@@ -4,10 +4,20 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    background: #ffffff url("../img/review@1x.jpg") no-repeat auto 100%;
+    background-color: #ffffff;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: auto 100%;
+    background-size: 350px auto;
 
     margin-top: 17px;
     margin-bottom: 68px;
+  }
+}
+
+@media (min-resolution: 1.5dppx) and (min-width: $tablet-width) {
+  .reviews {
+    background-image: url("../img/review@2x.jpg");
   }
 }
 
