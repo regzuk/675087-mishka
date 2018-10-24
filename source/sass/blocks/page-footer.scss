@@ -17,17 +17,20 @@
 @media (min-width: $tablet-width) {
   .page-footer__logo-link {
     display: block;
-    filter: brightness(0);
 
-    &:focus,
-    &:hover {
-      filter: none;
+    &:focus .page-footer__logo-svg,
+    &:hover .page-footer__logo-svg {
+      fill: $contrast-color;
     }
 
     &:active {
       opacity: 0.2;
     }
   }
+}
+
+.page-footer__logo-svg {
+  fill: #231f20;
 }
 
 @import "social.scss";

@@ -89,7 +89,6 @@
 
 @media (min-width: $desktop-width) {
   .knitting-form__description {
-    // margin-top: 129px;
     padding: 0;
   }
 }
@@ -110,12 +109,6 @@
     &:nth-child(2n) {
       background-color: $grey-color;
     }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .knitting-form__fieldset {
-    // padding: 66px 0 70px 0;
   }
 }
 
@@ -250,7 +243,7 @@
 
   &--contacts {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 
@@ -285,7 +278,7 @@
       width: 100%;
       margin-top: 40px;
 
-      flex-direction: row;
+      flex-direction: row-reverse;
     }
   }
 }
@@ -397,31 +390,11 @@
       top: 8px;
       left: 63px;
     }
-
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 25px;
-      height: 25px;
-      background: url("../img/icon-phone.svg") no-repeat center center;
-      top: 33px;
-      right: 9px;
-
-      opacity: 0.2;
-    }
   }
 
   &--email {
     margin-bottom: 10px;
     margin-top: 6px;
-
-    &::before {
-      width: 32px;
-      height: 32px;
-      background: url("../img/icon-mail.svg") no-repeat center center;
-      right: 5px;
-    }
 
     &::after {
       left: 70px;
@@ -483,21 +456,11 @@
       &::after {
         display: none;
       }
-
-      &::before {
-        top: -9px;
-        right: -476px;
-      }
     }
 
     &--email {
       margin-bottom: 10px;
       margin-top: 0;
-
-      &::before {
-        right: -482px;
-        top: -12px;
-      }
     }
 
     &--other {
@@ -511,16 +474,47 @@
   .knitting-form__label {
     &--contacts {
       width: 115px;
-
-      &::before {
-        top: -9px;
-        right: -695px;
-      }
     }
 
     &--other {
       width: 150px;
     }
+  }
+}
+
+.knitting-form__label-svg {
+  fill: $fill-color;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 33px;
+  right: 9px;
+
+  opacity: 0.2;
+
+  &--email {
+    width: 32px;
+    height: 32px;
+    right: 5px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .knitting-form__label-svg {
+    top: -9px;
+    right: -476px;
+
+    &--email {
+      right: -482px;
+      top: -12px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .knitting-form__label-svg {
+    top: -9px;
+    right: -695px;
   }
 }
 
@@ -540,6 +534,11 @@
   &:hover,
   &:active {
     border-bottom-color: $contrast-color;
+
+    & + .knitting-form__label .knitting-form__label-svg {
+      fill: $contrast-color;
+      opacity: 1;
+    }
   }
 }
 

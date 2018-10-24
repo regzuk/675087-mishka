@@ -34,11 +34,9 @@
   display: block;
   font-size: 0;
 
-  filter: brightness(0);
-
-  &:focus,
-  &:hover {
-    filter: none;
+  &:focus .social__link-svg,
+  &:hover .social__link-svg {
+    fill: $contrast-color;
   }
 
   &:active {
@@ -48,18 +46,19 @@
   &--inst {
     width: 22px;
     height: 22px;
-    background-image: url("../img/icon-insta.svg");
   }
 
   &--fb {
     width: 15px;
     height: 28px;
-    background-image: url("../img/icon-fb.svg");
   }
 
   &--tw {
     width: 24px;
     height: 21px;
-    background-image: url("../img/icon-twitter.svg");
   }
+}
+
+.social__link-svg {
+  fill: $fill-color;
 }

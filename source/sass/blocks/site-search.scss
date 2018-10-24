@@ -2,34 +2,18 @@
   display: block;
   position: relative;
 
-  &::before {
-    content: "";
-
-    display: block;
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    background: url("../img/icon-search.svg") no-repeat center center;
-
-    filter: grayscale(1);
-
-    left: 30px;
-    top: 32px;
-
-    opacity: 0.2;
-  }
-
   &:focus,
   &:hover {
-    &::before {
-      filter: grayscale(0);
+    opacity: 0.6;
+
+    & .site-search__input-label-svg {
+      fill: $contrast-color;
       opacity: 1;
     }
   }
 
   &:active {
-    &::before {
-      filter: grayscale(0);
+    & .site-search__input-label-svg {
       opacity: 0.2;
     }
   }
@@ -40,10 +24,23 @@
     font-size: 0;
     box-shadow: -1px 0 0 #ebebeb;
     width: 88px;
+  }
+}
 
-    &::before {
-      left: 36px;
-      top: 36px;
-    }
+.site-search__input-label-svg {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+
+  left: 30px;
+  top: 32px;
+
+  opacity: 0.2;
+}
+
+@media (min-width: $tablet-width) {
+  .site-search__input-label-svg {
+    left: 36px;
+    top: 36px;
   }
 }

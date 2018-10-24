@@ -8,32 +8,3 @@
 
   @include clear-title;
 }
-
-@mixin item-backround-hover {
-  &:focus,
-  &:hover {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
-
-    & .catalog__item-title {
-      opacity: 0.6;
-    }
-
-    & .catalog__item-price::after {
-      filter: grayscale(0);
-      opacity: 1;
-    }
-  }
-
-  &:active {
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
-
-    & .catalog__item-title {
-      opacity: 0.3;
-    }
-
-    & .catalog__item-price::after {
-      filter: grayscale(0);
-      opacity: 0.2;
-    }
-  }
-}

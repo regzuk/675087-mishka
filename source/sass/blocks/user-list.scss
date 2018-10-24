@@ -10,29 +10,12 @@
 .user-list__cart {
   position: relative;
 
-  &::before {
-    content: "";
-
-    display: block;
-    position: absolute;
-    width: 21px;
-    height: 19px;
-    background: url("../img/icon-cart.svg") no-repeat center center;
-
-    filter: grayscale(1);
-
-    left: 30px;
-    top: 32px;
-
-    opacity: 0.2;
-  }
-
   &:focus,
   &:hover {
     opacity: 0.6;
 
-    &::before {
-      filter: grayscale(0);
+    & .user-list__cart-svg {
+      fill: $contrast-color;
       opacity: 1;
     }
   }
@@ -40,8 +23,8 @@
   &:active {
     opacity: 0.3;
 
-    &::before {
-      filter: grayscale(0);
+    & .user-list__cart-svg {
+      fill: #231f20;
       opacity: 0.2;
     }
   }
@@ -54,5 +37,24 @@
     &::before {
       top: 34px;
     }
+  }
+}
+
+.user-list__cart-svg {
+  fill: #231f20;
+
+  position: absolute;
+  width: 21px;
+  height: 19px;
+
+  left: 30px;
+  top: 32px;
+
+  opacity: 0.2;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list__cart-svg {
+    top: 34px;
   }
 }
