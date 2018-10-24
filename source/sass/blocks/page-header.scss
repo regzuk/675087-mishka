@@ -28,6 +28,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 
     position: absolute;
   }
@@ -60,8 +61,6 @@
   .page-header__logo {
     order: 0;
 
-    width: 113px;
-    height: 46px;
     box-shadow: none;
   }
 }
@@ -69,9 +68,6 @@
 @media (min-width: $desktop-width) {
   .page-header__logo {
     order: 1;
-
-    width: 148px;
-    height: 73px;
   }
 }
 

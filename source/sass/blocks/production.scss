@@ -3,6 +3,23 @@
   padding: 20px 0;
   padding-bottom: 30px;
   border: 1px solid #ebebeb;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+
+    & .production-title {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+
+    & .production-title {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -125,6 +142,8 @@
 
   left: 50%;
   margin-left: -51px;
+
+  transition: width 1s, height 1s, margin-top 1s, margin-left 1s;
 
   $video-button-hover-size-multiple: 1.2;
   $video-button-active-size-multiple: 0.8;
