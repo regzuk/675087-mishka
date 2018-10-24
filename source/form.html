@@ -12,13 +12,14 @@
     </div>
     <header class="page-header">
       <div class="page-header__inner">
-        <a class="page-header__logo page-header__logo--link" href="index.html" alt="На главную">
+        <a class="page-header__logo page-header__logo--link" href="index.html">
           <picture class="page-header__logo-wrapper">
             <source media="(min-width: 1250px)" srcset="./img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
             <img
               class="page-header__logo-img"
               src="./img/logo-mobile.svg"
+              alt="Логотип"
               >
           </picture>
         </a>
@@ -176,7 +177,7 @@
                 </h3>
                 <ul class="knitting-form__list knitting-form__list--contacts">
                   <li class="knitting-form__item knitting-form__item--contacts">
-                    <input id="phone" class="knitting-form__input knitting-form__input--contacts" type="phone" placeholder="+7 XXX XXX XX XX*" name="phone" required>
+                    <input id="phone" class="knitting-form__input knitting-form__input--contacts" type="tel" placeholder="+7 XXX XXX XX XX*" name="phone" required>
                     <label for="phone" class="knitting-form__label knitting-form__label--personal knitting-form__label--contacts">
                       Тел
                       <svg class="knitting-form__label-svg" width="24.829px" height="24.333px">
@@ -201,7 +202,7 @@
                 <label for="wish" class="knitting-form__label knitting-form__label--personal knitting-form__label--contacts knitting-form__label--other">
                   Доп
                 </label>
-                <textarea is="wish" class="knitting-form__textarea" name="wish" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                <textarea id="wish" class="knitting-form__textarea" name="wish" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
             </div>
             <div class="knitting-form__inner knitting-form__inner--submit">
