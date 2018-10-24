@@ -206,6 +206,7 @@
 
 @media (min-width: $desktop-width) {
   .featured__img-wrapper {
+    padding-top: 0;
     top: -80px;
     z-index: -1;
   }

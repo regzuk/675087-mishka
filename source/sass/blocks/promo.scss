@@ -15,9 +15,9 @@ $title-hor-padding: 38px;
       width: 100%;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
-      background-position: 25px 0;
-      background-size: cover;
-      bottom: -12px;
+      background-position: center bottom;
+      background-size: contain;
+      bottom: -10px;
     }
   }
 }
@@ -25,7 +25,13 @@ $title-hor-padding: 38px;
 @media (min-width: $desktop-width) {
   .promo {
     &::after {
-      bottom: -5px;
+      bottom: -19px;
+      background-size: cover;
+      width: 1150px;
+      height: 37.5px;
+      background-position: bottom;
+      left: 50%;
+      margin-left: 1150px / (-2);
     }
   }
 }

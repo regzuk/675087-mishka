@@ -18,13 +18,15 @@
   .page-footer__logo-link {
     display: block;
 
-    &:focus .page-footer__logo-svg,
-    &:hover .page-footer__logo-svg {
-      fill: $contrast-color;
-    }
+    &:not(&--index) {
+      &:focus .page-footer__logo-svg,
+      &:hover .page-footer__logo-svg {
+        fill: $contrast-color;
+      }
 
-    &:active {
-      opacity: 0.2;
+      &:active {
+        opacity: 0.2;
+      }
     }
   }
 }
