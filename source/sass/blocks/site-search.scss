@@ -2,6 +2,11 @@
   display: block;
   position: relative;
 
+  // width: 260px;
+  // text-align: center;
+  // margin: 0 auto;
+  // box-shadow: 0 1px 0 #ebebeb;
+
   &:focus,
   &:hover {
     opacity: 0.6;
@@ -32,7 +37,7 @@
   width: 18px;
   height: 18px;
 
-  left: 30px;
+  left: calc(100% / 2 - 130px);
   top: 32px;
 
   opacity: 0.2;

@@ -30,7 +30,13 @@
 @media (min-width: $desktop-width) {
   .nav__list-item {
     &:first-child {
-      margin-right: 71px;
+      padding-right: 35px;
+      margin-right: 0;
+      box-shadow: 1px 0 #ebebeb;
+    }
+
+    &:last-child {
+      padding-left: 35px;
     }
   }
 }
@@ -45,7 +51,7 @@
 
 @media (min-width: $desktop-width) {
   .nav__link {
+    font-size: 17px;
     padding: 30px 0;
-    letter-spacing: 0.1px;
   }
 }
