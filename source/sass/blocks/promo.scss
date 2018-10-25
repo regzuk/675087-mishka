@@ -25,13 +25,13 @@ $title-hor-padding: 38px;
 @media (min-width: $desktop-width) {
   .promo {
     &::after {
-      bottom: -19px;
+      bottom: -22px;
       background-size: cover;
-      width: 1150px;
-      height: 37.5px;
+      width: 1050px;
+      height: 39px;
       background-position: bottom;
       left: 50%;
-      margin-left: 1150px / (-2);
+      margin-left: 1050px / (-2);
     }
   }
 }

@@ -47,7 +47,6 @@
   width: 21px;
   height: 19px;
 
-  // left: 30px;
   left: calc(100% / 2 - 130px);
   top: 32px;
 
@@ -57,5 +56,6 @@
 @media (min-width: $tablet-width) {
   .user-list__cart-svg {
     top: 34px;
+    left: 30px;
   }
 }
