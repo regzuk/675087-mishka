@@ -19,3 +19,27 @@ if (document.querySelector(".contacts__map")) {
   maps[0].classList.toggle("contacts__map-frame--hidden");
   maps[1].classList.toggle("contacts__map-frame--hidden");
 }
+
+var openModal = function (oEvent) {
+  oEvent.preventDefault();
+  document.querySelector(".modal-add-cart").classList.remove("visually-hidden");
+}
+
+var closeModal = function (oEvent) {
+  oEvent.preventDefault();
+  document.querySelector(".modal-add-cart").classList.add("visually-hidden");
+}
+
+var catalogItems = document.querySelectorAll(".catalog__item-price");
+if (catalogItems) {
+  for (var i = 0; i < catalogItems.length; i++) {
+    catalogItems[i].addEventListener("click", openModal);
+  }
+}
+
+if (document.querySelector(".featured__book-button"))
+  document.querySelector(".featured__book-button")
+    .addEventListener("click", openModal);
+
+document.querySelector(".modal-add-cart__add-cart-button")
+  .addEventListener("click", closeModal);
