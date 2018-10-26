@@ -169,7 +169,7 @@
 
 .featured__detail-name,
 .featured__detail-value {
-  padding: 13px 0;
+  padding: 12px 0;
   border-bottom: 1px solid #ececec;
 }
 
@@ -220,6 +220,7 @@
   .featured__img {
     width: 333px;
     height: 404px;
+    margin-top: 0;
   }
 }
 
@@ -233,7 +234,7 @@
 .featured__book-wrapper {
   color: $content-text-color;
   font-weight: bold;
-  margin-top: 17px;
+  margin-top: 20px;
   text-align: center;
 }
 
