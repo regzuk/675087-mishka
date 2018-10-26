@@ -17,10 +17,12 @@
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
     width: $desktop-content-width;
-    margin: auto;
+    position: relative;
+    margin: 0 auto;
 
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     flex-wrap: wrap;
     height: 500px;
 
@@ -41,6 +43,7 @@
 @media (min-width: $desktop-width) {
   .contacts__container {
     position: relative;
+    margin: 0;
     padding: 0 0 0 175px;
     margin-top: 90px;
     margin-bottom: 0;
@@ -178,9 +181,10 @@
 
 @media (min-width: $desktop-width) {
   .contacts__map {
+    position: absolute;
+    top: 20px;
+    right: 0;
     width: 525px;
-    right: 100px;
-    top: 90px;
 
     order: 2;
   }
@@ -207,7 +211,7 @@
 
 @media (min-width: $desktop-width) {
   .contacts__button-container {
-    margin: 0 auto;
+    margin: 0;
     margin-top: 50px;
     padding: 0 0 0 175px;
 
