@@ -1,6 +1,6 @@
 .production {
   margin-top: 28px;
-  padding: 20px 0;
+  padding: 25px 0;
   padding-bottom: 30px;
   border: 1px solid #ebebeb;
 
@@ -39,7 +39,7 @@
     height: 455px;
     margin-top: 55px;
     padding-bottom: 0;
-    margin-bottom: 104px;
+    margin-bottom: 100px;
   }
 }
 
@@ -92,7 +92,7 @@
 
     &::after {
       top: -53px;
-      left: 80px;
+      left: 77px;
     }
   }
 }
@@ -106,6 +106,12 @@
     order: 1;
 
     overflow: hidden;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production__video-player {
+    width: 682px;
   }
 }
 
