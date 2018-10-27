@@ -18,7 +18,8 @@
     position: relative;
     font-size: 43px;
     line-height: 50px;
-    padding: 95px 0 90px;
+    padding: 95px calc(50% - 190px) 90px;
+    width: 380px;
 
     &::after {
       content: "";
@@ -32,6 +33,7 @@
       background-position: 0 0;
       background-size: cover;
       bottom: -5px;
+      left: 0;
     }
 
     &--index {
@@ -44,7 +46,8 @@
   .page-main__title {
     font-size: 53px;
     line-height: 57px;
-    padding: 95px 0 105px;
+    padding: 95px calc(50% - 250px) 105px;
+    width: 500px;
 
     &::after {
       height: 34px;
