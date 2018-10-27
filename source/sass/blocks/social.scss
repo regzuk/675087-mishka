@@ -2,7 +2,7 @@
   .social__container {
     width: auto;
     margin-top: 7px;
-    margin-left: 80px;
+    margin-left: 40px;
   }
 }
 
@@ -26,7 +26,13 @@
     padding: 0;
 
     border-bottom: none;
-    width: 40px * 2 + 21px * 3;
+    // width: 40px * 2 + 21px * 3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__item {
+    margin-left: 40px;
   }
 }
 

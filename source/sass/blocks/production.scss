@@ -35,8 +35,9 @@
 
 @media (min-width: $desktop-width) {
   .production {
+    position: relative;
     flex-wrap: wrap;
-    height: 455px;
+    min-height: 455px;
     margin-top: 55px;
     padding-bottom: 0;
     margin-bottom: 100px;
@@ -88,6 +89,7 @@
     width: 150px;
 
     margin-top: 91px;
+    margin-left: 682px;
     padding-left: 76px;
 
     &::after {
@@ -111,7 +113,10 @@
 
 @media (min-width: $desktop-width) {
   .production__video-player {
-    width: 682px;
+    // width: 682px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -184,7 +189,7 @@
 @media (min-width: $desktop-width) {
   .production__description {
     width: 240px;
-    margin: 10px 43px 40px 78px;
+    margin: 10px 43px 40px (78px + 682px);
     line-height: 30px;
   }
 }
@@ -207,7 +212,8 @@
 @media (min-width: $desktop-width) {
   .production__book-button {
     margin: 5px;
-    margin-left: 75px;
+    margin-left: 75px + 682px;
+    margin-bottom: 60px;
     width: 230px;
   }
 }

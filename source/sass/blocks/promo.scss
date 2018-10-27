@@ -121,6 +121,7 @@ $title-hor-padding: 38px;
 @media (min-width: $tablet-width) {
   .promo__nav-list {
     display: flex;
+    align-items: flex-end;
     max-width: none;
   }
 }
