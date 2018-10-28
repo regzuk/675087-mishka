@@ -205,13 +205,6 @@ $title-hor-padding: 38px;
     padding-right: $tablet-content-width / 2 - 110px - 35px;
     padding-top: 35px - 7px;
     padding-bottom: 32px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .promo__nav-link {
-    padding-left: 37px;
-    padding-right: $desktop-content-width / 2 - 110px - 37px;
 
     &--items {
       &::after {
@@ -225,5 +218,12 @@ $title-hor-padding: 38px;
         right: 35px;
       }
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__nav-link {
+    padding-left: 37px;
+    padding-right: $desktop-content-width / 2 - 110px - 37px;
   }
 }

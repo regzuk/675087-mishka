@@ -127,7 +127,7 @@
 
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 @media (min-width: $tablet-width) {
@@ -159,6 +159,7 @@
 @media (min-width: $tablet-width) {
   .catalog__item-information {
     flex-grow: 1;
+    width: 268px;
   }
 }
 
@@ -227,7 +228,8 @@
 
 @media (min-width: $tablet-width) {
   .catalog__item-price-svg {
-    right: 25px;
+    right: -5px;
+    top: 30px;
   }
 }
 
