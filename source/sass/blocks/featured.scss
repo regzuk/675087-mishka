@@ -173,12 +173,12 @@
   border-bottom: 1px solid #ececec;
 }
 
-@media (min-width: $tablet-width) {
-  .featured__detail-name,
-  .featured__detail-value {
-    padding: 13px 0;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   .featured__detail-name,
+//   .featured__detail-value {
+//     padding: 13px 0;
+//   }
+// }
 
 @media (min-width: $tablet-width) {
   .featured__detail-name {
@@ -242,7 +242,7 @@
 .featured__book-wrapper {
   color: $content-text-color;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 18px;
   text-align: center;
 }
 
