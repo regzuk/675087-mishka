@@ -11,7 +11,7 @@
 
 .knitting-form__inner {
   &--submit {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 
@@ -74,7 +74,7 @@
     }
 
     &--contacts {
-      margin-top: 68px;
+      margin-top: 66px;
     }
 
     &--submit {
@@ -179,6 +179,7 @@
   padding-bottom: 44px;
 
   &--personal {
+    padding-top: 18px;
     margin-bottom: -48px;
   }
 }
@@ -235,7 +236,7 @@
   margin-top: 25px;
 
   &:first-child {
-    margin-top: 20px;
+    margin-top: 22px;
   }
 
   &--color {
@@ -255,6 +256,8 @@
   &--contacts {
     display: flex;
     flex-direction: column-reverse;
+
+    // margin-top: 28px;
   }
 }
 
@@ -274,7 +277,11 @@
       }
 
       &:nth-child(2n) {
-        margin-left: 40px;
+        margin-left: 42px;
+      }
+
+      &:nth-child(2n + 3) {
+        margin-top: 59px;
       }
     }
 
@@ -297,6 +304,8 @@
 @media (min-width: $desktop-width) {
   .knitting-form__item {
     &--color {
+      margin-top: 60px;
+
       &:nth-child(3) {
         margin-top: 0;
       }
@@ -387,7 +396,7 @@
     line-height: 16px;
     color: $contrast-color;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 
     &::after {
       content: "";
@@ -408,14 +417,19 @@
     margin-top: 6px;
 
     &::after {
-      left: 70px;
-      width: 190px;
+      top: 8px;
+      left: 80px;
+      width: 180px;
     }
   }
 
   &--other {
     &::before {
       display: none;
+    }
+
+    &::after {
+      top: 8px;
     }
   }
 }
@@ -441,8 +455,8 @@
     }
 
     .knitting-form__checkbox + &::before {
-      width: 52px;
-      height: 52px;
+      width: 50px;
+      height: 50px;
       top: -18px;
       left: 0;
     }
@@ -538,7 +552,7 @@
 
 @media (min-width: $desktop-width) {
   .knitting-form__label-svg {
-    top: -9px;
+    top: -6px;
     right: -695px;
   }
 }
@@ -595,7 +609,7 @@
   padding: 15px 16px;
   border: 2px solid #000000;
 
-  margin-top: 15px;
+  margin-top: 20px;
 
   resize: none;
 
