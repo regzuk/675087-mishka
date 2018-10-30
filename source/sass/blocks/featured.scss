@@ -16,7 +16,7 @@
     &::after {
       height: 16px;
       background-repeat: repeat-x;
-      background-position: 25px center;
+      background-position: center center;
     }
   }
 }
@@ -173,6 +173,19 @@
   border-bottom: 1px solid #ececec;
 }
 
+@media (min-width: $tablet-width) {
+  .featured__detail-name,
+  .featured__detail-value {
+    padding: 13px 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .featured__detail-name {
+    width: 99px;
+  }
+}
+
 .featured__detail-value {
   letter-spacing: -0.6px;
   padding-left: 15px;
@@ -181,12 +194,6 @@
 @media (min-width: $tablet-width) {
   .featured__detail-value {
     padding-left: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .featured__detail-value {
-    padding-left: 15px;
   }
 }
 

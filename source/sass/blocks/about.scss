@@ -16,7 +16,7 @@
     &::after {
       height: 16px;
       background-repeat: repeat-x;
-      background-position: 25px center;
+      background-position: center center;
     }
   }
 }
@@ -50,6 +50,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .about__title {
+    letter-spacing: -0.4px;
+  }
+}
+
 .about__list {
   @include clear-list;
   padding-top: 3px;
@@ -66,15 +72,15 @@
     justify-content: space-between;
     // height: (112px + 3*22px) * 3;
     margin-top: -11px;
-    margin-bottom: 82px;
+    margin-bottom: 85px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about__list {
     padding-right: 225px;
-
-    margin-bottom: 90px;
+    margin-top: -15px;
+    margin-bottom: 93px;
   }
 }
 
