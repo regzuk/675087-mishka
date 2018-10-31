@@ -558,6 +558,7 @@
 }
 
 .knitting-form__input {
+  font-family: "Open Sans", "Arial", sans-serif;
   padding-top: 16px;
   padding-bottom: 16px;
   background: transparent;
@@ -567,6 +568,14 @@
   width: 100%;
   font-size: 17px;
   line-height: 18px;
+
+  &--contacts {
+    letter-spacing: 1px;
+  }
+
+  &--email {
+    letter-spacing: 0;
+  }
 
   &:focus,
   &:hover,
@@ -603,9 +612,9 @@
 
 
 .knitting-form__textarea {
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
-  letter-spacing: 0.5px;
   padding: 15px 16px;
   border: 2px solid #000000;
 
